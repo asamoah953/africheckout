@@ -1,0 +1,74 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 19.5rem;
+    height: 93.5vh;
+    background-color: #FAFAFA;
+    color: #8C8C91;
+}
+
+.shrink {
+    width: 4rem;
+}
+
+.home-container {
+    margin-top: 2rem;
+}
+
+
+.home-container,
+.product-container,
+.transaction-container,
+.compliance-container,
+.settings-container,
+.payoutAccount-container,
+.request-container {
+    width: 90%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-left: 1.5rem;
+    margin-bottom: -9px;
+    font-size: 20px;
+    background-color:#FAFAFA;
+    transition: all 0.3s ease;
+}
+
+.accounts-container,
+.payout-container {
+    margin-left: 1rem;
+}
+
+.dash {
+    display: inline-block;
+    margin-left: 1rem;
+    background-color: #FAFAFA;
+    font-size: .9rem;
+}
+.dash:hover {
+    display: inline-block;
+    margin-left: 1rem;
+    background-color: #f4f4f5e0;
+}
+
+.home-container:hover,
+.product-container:hover,
+.transaction-container:hover,
+.compliance-container:hover,
+.settings-container:hover,
+.payoutAccount-container:hover,
+.request-container:hover {
+    background-color:#f4f4f5e0;
+    cursor: pointer;
+}
+
+.home-icon:hover {
+ background-color:#f4f4f5e0;
+}
+
+@media (max-width:63.9375rem) {
+    .dashboard-container{
+        display: none;
+    }
+    
+}
