@@ -1,0 +1,39 @@
+.producton-header {
+    width:70%;
+    height: 2rem;
+    font-size: small;
+    color: gray;
+}
+.production-container {
+    width: 70%;
+    height: 2rem;
+    display: inline-block;
+    position: absolute;
+    margin: 5rem;
+    margin-left: 12rem;
+    margin-top: 2rem;
+}
+
+.production-list {
+    border: 1px solid black;
+    width: 90%;
+    height: 12rem;
+    margin-top: 4rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-button {
+    width:75rem ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: 7.5rem;
+    height: 2.3rem;
+    margin-top: .7rem;
+    border-radius: 12px;
+}

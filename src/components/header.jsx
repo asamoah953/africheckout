@@ -6,16 +6,13 @@ import './../../CSS/header.css'
 
 
 function Header({clicked,setClick}) {
-
-    
-
-    console.log(clicked)
        
     
 
 
     return (
         <header className="header-container">
+           
             <div className= { !clicked ? 'logo-container shrink' : 'logo-container'} >
                
                {

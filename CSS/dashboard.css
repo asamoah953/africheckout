@@ -6,16 +6,31 @@
     height: 93.5vh;
     background-color: #FAFAFA;
     color: #8C8C91;
+
 }
 
 .shrink {
     width: 4rem;
 }
 
+
+
 .home-container {
     margin-top: 2rem;
 }
 
+.logo1 {
+    height: 2.5rem;
+    width: 10rem;
+    position: relative;
+    margin: 10px 1px 1px 25px;
+    background-color: #FFFFFF;
+
+}
+
+.dashBoard-wrapper {
+    display: inline-block;
+}
 
 .home-container,
 .product-container,
@@ -30,7 +45,7 @@
     margin-left: 1.5rem;
     margin-bottom: -9px;
     font-size: 20px;
-    background-color:#FAFAFA;
+    background-color: #FAFAFA;
     transition: all 0.3s ease;
 }
 
@@ -44,12 +59,22 @@
     margin-left: 1rem;
     background-color: #FAFAFA;
     font-size: .9rem;
+    position: absolute;
+    
 }
+
 .dash:hover {
     display: inline-block;
     margin-left: 1rem;
     background-color: #f4f4f5e0;
 }
+
+
+/* .dashBoard-wrapper {
+    
+} */
+
+
 
 .home-container:hover,
 .product-container:hover,
@@ -58,17 +83,41 @@
 .settings-container:hover,
 .payoutAccount-container:hover,
 .request-container:hover {
-    background-color:#f4f4f5e0;
+    background-color: #f4f4f5e0;
     cursor: pointer;
 }
 
 .home-icon:hover {
- background-color:#f4f4f5e0;
+    background-color: #f4f4f5e0;
 }
 
+
+
 @media (max-width:63.9375rem) {
-    .dashboard-container{
-        display: none;
+    .dashboard-container {
+        position: relative;
+        top: -64px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 19.5rem;
+        height: 100vh;
+        background-color: #FAFAFA;
+        color: #8C8C91;
+        box-shadow: #8C8C91;
+        border: 1px solid #e8e8eb;
     }
-    
+
+    .vanish {
+    display: none;
+}
+
+
+}
+
+@media (min-width:63.9375rem) {
+.logo1{
+    display: none;
+}
+
 }

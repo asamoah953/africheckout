@@ -2,16 +2,16 @@
 
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #FAFAFA;
-    font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
 
+:any-link {
+  text-decoration: none;
+  color: inherit;
 
-
-
-
-  
+}

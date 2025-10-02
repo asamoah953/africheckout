@@ -1,0 +1,25 @@
+.transaction-page {
+     border: 1px solid black;
+    width: 75rem;
+    height: 7vh;
+    display: inline-block;
+    margin: 10rem;
+    margin-top: 2.5rem;
+    margin-left: 13rem;
+    position: absolute;
+    font-size: 1.2rem;
+    background-color: #FFFFFF;
+
+}
+
+.container {
+    border: 1px solid black;
+    width: 20rem;
+    height: 12.5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FFFFFF;
+}
+
