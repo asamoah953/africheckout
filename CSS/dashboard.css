@@ -49,6 +49,14 @@
     transition: all 0.3s ease;
 }
 
+
+
+
+
+.payoutAccount-container{
+    margin-top: 1.6rem;
+}
+
 .accounts-container,
 .payout-container {
     margin-left: 1rem;
@@ -66,13 +74,10 @@
 .dash:hover {
     display: inline-block;
     margin-left: 1rem;
-    background-color: #f4f4f5e0;
 }
 
 
-/* .dashBoard-wrapper {
-    
-} */
+
 
 
 
@@ -121,3 +126,133 @@
 }
 
 }
+
+/* Mobile responsive styles for 375px width screens */
+@media (max-width: 375px) {
+  
+  /* Shrink dashboard sidebar width */
+  .dashboard-container {
+    width: 100vw; /* full width on mobile */
+    height: auto;
+    position: fixed; /* sidebar overlay */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #FAFAFA;
+    overflow-y: auto;
+    padding-bottom: 2rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+  
+  /* When shrink class is applied, hide sidebar completely */
+  .dashboard-container.shrink {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+  
+  /* Position the close icon properly */
+  .dashboard-container > svg {
+    right: 1rem !important;
+    top: 1rem !important;
+  }
+  
+  /* Logo resizing */
+  .logo1 {
+    width: 8rem;
+    height: 2rem;
+    margin: 10px 10px 10px 15px;
+  }
+  
+  /* Reduce margins in containers */
+  .home-container,
+  .product-container,
+  .transaction-container,
+  .compliance-container,
+  .settings-container,
+  .payoutAccount-container,
+  .request-container {
+    width: 95%;
+    margin-left: 0.5rem;
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+
+  /* Arrow icon margins */
+  .arrow {
+    margin-left: 6rem !important;
+  }
+
+  /* Dash text styling */
+  .dash {
+    font-size: 0.8rem;
+    margin-left: 0.5rem !important;
+    position: relative !important; /* remove absolute on mobile */
+  }
+
+  /* Hover effects */
+  .home-container:hover,
+  .product-container:hover,
+  .transaction-container:hover,
+  .compliance-container:hover,
+  .settings-container:hover,
+  .payoutAccount-container:hover,
+  .request-container:hover {
+    background-color: #f4f4f5e0;
+    cursor: pointer;
+  }
+  
+  /* Scrollable sidebar */
+  .dashBoard-wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    width: 100vw;
+  }
+}
+
+
+
+/* @media (max-width: 320px) {
+    .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 14.5rem;
+    height: 93.5vh;
+    background-color: #FAFAFA;
+    color: #8C8C91;
+    font-size: 21rem;
+    position: absolute;
+
+}
+
+.dash {
+    display: inline-block;
+    margin-left: 1rem;
+    background-color: #FAFAFA;
+    font-size: .6rem;
+    position: absolute;
+    
+}
+
+.arrow {
+    display: none;
+}
+
+.home-container,
+.product-container,
+.transaction-container,
+.compliance-container,
+.settings-container,
+.payoutAccount-container,
+.request-container {
+    width: 70%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-left: 1.5rem;
+    margin-bottom: -9px;
+    font-size: 20px;
+    background-color: #FAFAFA;
+    transition: all 0.3s ease;
+}
+} */

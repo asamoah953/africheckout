@@ -6,11 +6,17 @@ import { BsTools } from "react-icons/bs";
 import { MdOutlinePayment } from "react-icons/md";
 import { IoMdSend } from "react-icons/io";
 import './../../CSS/dashboard.css';
-import { Link } from 'react-router-dom'
+import { IoIosArrowDown } from "react-icons/io";
+import { IoChevronUpOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+import { BiX } from "react-icons/bi";
+import { useState } from "react";
 
-function DashBoard({ dashBoard }) {
+function DashBoard({ dashBoard, setDashBoard }) {
 
-    console.log(dashBoard)
+    const [account, setAccount] = useState(true);
+    const [payout, setPayout] = useState(true)
+
     return (
 
 
@@ -19,11 +25,13 @@ function DashBoard({ dashBoard }) {
 
 
             <div className={!dashBoard ? 'dashboard-container shrink' : 'dashboard-container'}>
+                <BiX style={{position:'absolute',right:'.7rem',fontSize:'2.5rem', backgroundColor:'gray', color:'red',borderRadius:'2rem',cursor:'pointer'}} onClick={()=>setDashBoard(prev=>!prev)}/>
+
 
 
                 <img alt="Africheckout logo" src="https://africheckout.com/images/logo.png" className="logo1"></img>
 
-                <Link to='/dashboard'>
+                <Link to='/' onClick={()=>setDashBoard(prev=>!prev)}>
                     <div className="home-container">
                         <AiOutlineHome className="home-icon" />
                         {
@@ -35,7 +43,7 @@ function DashBoard({ dashBoard }) {
                 </Link>
 
 
-                <Link to='/product'>
+                <Link to='/product' onClick={()=>setDashBoard(prev=>!prev)}>
 
                     <div className="product-container">
                         <TfiMenuAlt className="home-icon" />
@@ -46,7 +54,7 @@ function DashBoard({ dashBoard }) {
                     </div>
                 </Link>
 
-                <Link to='/transaction'>
+                <Link to='/transaction' onClick={()=>setDashBoard(prev=>!prev)}>
                     <div className="transaction-container">
                         <AiOutlineDollarCircle className="home-icon" />
                         {
@@ -59,46 +67,72 @@ function DashBoard({ dashBoard }) {
 
                 <div className="accounts-container">
                     {
-                        dashBoard && <h3 className="dash">Accounts</h3>
+                        dashBoard && <h3 className="dash">Accounts 
+                        {
+                            account && <IoIosArrowDown className='arrow' style={{ marginLeft:'10rem', cursor:'pointer'}} onClick={()=>setAccount(prev=> !prev)}/>
+
+                        }
+                        {
+                           !account && <IoChevronUpOutline className="arrow" style={{ marginLeft:'10rem', cursor:'pointer'}} onClick={()=>setAccount(prev=>!prev)}/>
+                        }
+                        </h3>
+                        
                     }
 
                 </div>
 
-                <div className="compliance-container">
+                    {
+                         !account &&  <Link to='/compliance' onClick={()=>setDashBoard(prev=>!prev)}><div className="compliance-container">
                     <LuFileText className="home-icon" />
                     {
                         dashBoard && <h3 className="dash">Compliance</h3>
                     }
 
-                </div>
+                </div></Link>
+                    }
 
-                <div className="settings-container">
+                 {
+                    !account && <Link to='/settings' onClick={()=>setDashBoard(prev=>!prev)}><div className="settings-container">
                     <BsTools className="home-icon" />
                     {
                         dashBoard && <h3 className="dash">Settings</h3>
                     }
 
-                </div>
+                </div></Link>
+                 }
+                    
 
                 <div className="payout-container">
                     {
-                        dashBoard && <h3 className="dash">Payouts</h3>
+                        dashBoard && <h3 className="dash" style={{marginTop:'1.7rem'}}>Payouts 
+                        {
+                            payout && <IoIosArrowDown className="arrow" style={{ marginLeft:'10.7rem', cursor:'pointer'}} onClick={()=>setPayout(prev=> !prev)}/>
+
+                        }
+                        {
+                           !payout && <IoChevronUpOutline className="arrow" style={{ marginLeft:'10.7rem', cursor:'pointer'}} onClick={()=>setPayout(prev=>!prev)}/>
+                        }
+                        </h3>
                     }
 
-                </div>
 
-                <div className="payoutAccount-container">
+                </div>
+                {
+                   !payout && <Link to='/payout' onClick={()=>setDashBoard(prev=>!prev)}><div className="payoutAccount-container">
                     <MdOutlinePayment className="home-icon" />
                     {
                         dashBoard && <h3 className="dash">Payout Accounts</h3>
                     }
-                </div>
-                <div className="request-container">
+                </div></Link>
+                }
+               {
+                 !payout && <Link to='/request'  onClick={()=>setDashBoard(prev=>!prev)}><div className="request-container">
                     <IoMdSend className="home-icon" />
                     {
                         dashBoard && <h3 className="dash">Payout Request</h3>
                     }
-                </div>
+                </div></Link>
+               }
             </div>
         </div>
 

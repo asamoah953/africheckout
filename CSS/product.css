@@ -1,12 +1,6 @@
-.producton-header {
-    width:70%;
-    height: 2rem;
-    font-size: small;
-    color: gray;
-}
+/* Desktop Styles (original, refined a bit) */
 .production-container {
     width: 70%;
-    height: 2rem;
     display: inline-block;
     position: absolute;
     margin: 5rem;
@@ -14,26 +8,126 @@
     margin-top: 2rem;
 }
 
-.production-list {
-    border: 1px solid black;
-    width: 90%;
-    height: 12rem;
-    margin-top: 4rem;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.producton-header {
+    width: 70%;
+    height: 2rem;
+    font-size: small;
+    color: gray;
 }
 
 .product-button {
-    width:75rem ;
+    width: 75rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
 }
 
 .button {
     width: 7.5rem;
     height: 2.3rem;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
     border-radius: 12px;
+    cursor: pointer;
+}
+
+.production-list {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 12rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.prod {
+    margin-top: 0.2rem;
+    background-color: white;
+}
+
+.list {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.list1 {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* Responsive Mobile Styles (up to 425px) */
+@media (max-width: 425px) {
+    .production-container {
+        width: 95%;
+        margin: 1rem auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producton-header {
+        width: 100%;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .product-button {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .product-button h2 {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+
+    .production-list {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        margin-top: 10.5rem;
+    }
+
+    .prod {
+        font-size: 1rem;
+        margin: 0.5rem auto 0;
+        
+    }
+
+    .production-list svg {
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+
+    .list {
+        display: inline-block;
+        margin-bottom: 0.6rem;
+        position: absolute;
+        top: 4.5rem;
+        margin-left: 7rem;
+
+    }
+
+    .list1 {
+        display: inline-block;
+
+    }
 }

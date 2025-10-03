@@ -1,5 +1,4 @@
 .transaction-page {
-     border: 1px solid black;
     width: 75rem;
     height: 7vh;
     display: inline-block;
@@ -8,18 +7,89 @@
     margin-left: 13rem;
     position: absolute;
     font-size: 1.2rem;
-    background-color: #FFFFFF;
-
 }
 
 .container {
-    border: 1px solid black;
-    width: 20rem;
-    height: 12.5rem;
-    margin-top: 1.5rem;
     width: 100%;
+    height: 16.5rem;
+    margin-top: 1.2rem;
     display: flex;
     justify-content: flex-end;
     background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
+
+.transaction-hr {
+    width: 100%;
+    height: 0.7px;
+    background-color: #ccc;
+    border: none;
+    margin: 1rem auto;
+    position: absolute;
+    margin-top: 4.5rem
+}
+
+.no-transaction {
+    position: absolute;
+    margin: 8rem;
+    font-size: 2.8rem;
+    color: black;
+    margin-right: 37rem;
+    padding: 0.4rem;
+    border-radius: 1.5rem;
+}
+
+.no-transactions {
+    position: absolute;
+    margin: 8rem;
+    font-size: 1.3rem;
+    color: black;
+    margin-right: 33rem;
+    margin-top: 11rem;
+    padding: 0.4rem;
+    border-radius: 1.5rem;
+    background-color: white;
+}
+
+@media screen and (max-width: 320px) {
+    .transaction-page {
+        width: 90%;
+        margin: 1rem auto;
+        position: static;
+        font-size: 1rem;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 1rem;
+        margin-left: 1.7rem;
+    }
+
+    .transact {
+        margin-left: 1.8rem;
+    }
+
+    .transaction-hr {
+        position: static;
+        margin: 1rem 0;
+    }
+
+    .no-transaction {
+        position: static;
+        margin: 1rem 0 0 0;
+        font-size: 2rem;
+    }
+
+    .no-transactions {
+        position: static;
+        margin: 0.5rem 0 0 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+}

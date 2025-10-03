@@ -4,6 +4,10 @@ import DashBoard from './components/dashboard';
 import Home from './pages/Home';
 import Product from './pages/product';
 import Transaction from './pages/transaction';
+import Compliance from './pages/compliance';
+import Settings from './pages/settings';
+import PayOut from './pages/payout';
+import PayoutRequest from './pages/payoutRequest';
 import { useState } from 'react';
 
 
@@ -29,9 +33,13 @@ function App() {
         <DashBoard dashBoard={clicked} setDashBoard={setClick} />
 
         <Routes>
-          <Route path='/dashboard' element={<Home moneyInfo={moneyInfo}/>} />
+           <Route path='/' element={<Home moneyInfo={moneyInfo}/>} />
           <Route path='/product' element={<Product />} />
-          <Route path='/transaction' element={<Transaction />} />
+           {/*<Route path='/transaction' element={<Transaction />} />
+          <Route path='/compliance' element={<Compliance/>}/>
+          <Route path='/settings' element={<Settings/>}/>
+          <Route path='/payout' element={<PayOut/>}/>
+          <Route path='/request' element={<PayoutRequest/>}/>  */}
         </Routes>
 
 
