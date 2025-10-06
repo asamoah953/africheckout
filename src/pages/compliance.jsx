@@ -53,7 +53,7 @@ function Compliance(){
                     <h3><label htmlFor="input">Address</label></h3>
                     <input type="text" />
                     <h3><label htmlFor="input">Identity type</label></h3>
-                    <input type="date" />
+                    <input type="text" />
                     <h3><label htmlFor="input">ID Number</label></h3>
                     <input type="text" />
                     <h3><label htmlFor="input">Identity Image</label></h3>

@@ -1,119 +1,182 @@
 .dashboard-home {
-    width: 60%;
-    height: 100vh;
-    display: inline-block;
-    position: absolute;
-    margin: 5.5rem;
-    margin-left: 15rem;
+  width: 60%;
+  height: 100vh;
+  display: inline-block;
+  position: absolute;
+  margin: 5.5rem;
+  margin-left: 15rem;
 }
 
 .dashboard-div {
+  width: 100%;
+  height: 48vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  gap: .1rem 20px;
+}
+
+.payout {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* light, subtle border */
+  width: 23rem;
+  height: 8rem;
+  border-radius: 14px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* optional: soft shadow for depth */
+}
+
+
+.charts {
+  width: 72.9rem;
+  height: 30vh;
+  border: 1px solid black;
+  margin-top: 31.9rem;
+  border-radius: 1rem;
+  border-top: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+}
+
+
+.earning {
+  position: absolute;
+  top: 460px;
+  left: -.5px;
+  right: 76rem;
+  width: 72.89rem;
+  height: 60.7px;
+  border: 1px solid black;
+  color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+.charts canvas {
+  width: 1150px !important;
+  height: 290px !important;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.money-info {
+  margin: 1.8rem;
+  background-color: #FFFFFF;
+}
+
+@media (max-width:1024px) {
+  .dashboard-div {
     width: 100%;
     height: 48vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
     gap: .1rem 20px;
-}
+  }
 
-.payout {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    /* light, subtle border */
-    width: 23rem;
+  .payout {
+    border: 1px solid black;
+    width: 14rem;
     height: 8rem;
     border-radius: 14px;
     background-color: #FFFFFF;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    /* optional: soft shadow for depth */
+  }
 }
 
 
-.charts {
-    width: 72.9rem;
-    height: 30vh;
-    border: 1px solid black;
-    margin-top: 31.9rem;
-    border-radius: 1rem;
-    border-top: none;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    
 
-}
-
-
-.earning {
+@media (max-width: 800px) {
+  .dashboard-home {
+    width: 100%;
+    height: auto;
+    margin: 1rem 1rem 0 1rem;
     position: absolute;
-    top: 460px;
-    left: -.5px;
-    right: 76rem;
-    width: 72.89rem;
-    height: 60.7px;
-    border: 1px solid black;
-    color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  .dashboard-div {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+    gap: 1rem;
+    position: static;
+  }
+
+  .payout {
+    width: 95%;
+    height: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .money-info {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.4rem !important;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .earning {
+    position: static;
+    width: 95%;
+    height: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .text {
+    position: static;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem
+  }
+
+  .charts {
+    width: 95%;
+    height: auto;
+    margin-top: 1rem;
+    box-sizing: border-box;
+  }
+
+  .charts canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Override any inline style directly applied to h3 */
+  h3[style] {
+    position: static !important;
+    margin: 1rem 0 !important;
+    font-size: 1.5rem !important;
+  }
 }
 
-.text {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
 
 
-.charts canvas {
-    width: 1150px !important;
-    height: 290px !important;
-}
-
-.icon{
-    font-size: 20px;
-}
-
-.money-info {
-    margin: 1.8rem;
-    background-color: #FFFFFF;
-}
-
-@media (max-width:1024px) {
-    .dashboard-div {
-        width: 100%;
-        height: 48vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        position: absolute;
-        gap: .1rem 20px;
-    }
-
-    .payout {
-        border: 1px solid black;
-        width: 14rem;
-        height: 8rem;
-        border-radius: 14px;
-        background-color: #FFFFFF;
-    }
-}
-
-@media (max-width:425px) {
-    .dashboard-home {
-        width: 60%;
-        height: 48vh;
-        display: inline-block;
-        position: absolute;
-        margin: 5.5rem;
-        margin-left: 6rem;
-    }
-
-}
-
-
-
-
-
-
+/* 
 @media (max-width:768px) {
     .dashboard-div {
         width: 100%;
@@ -133,7 +196,8 @@
         margin: 5.5rem;
         margin-left: 2rem;
     }
-}
+} */
+
 
 @media (max-width: 425px) {
   .dashboard-home {
@@ -179,6 +243,7 @@
     width: 90%;
     height: auto;
     margin-top: 1.5rem;
+    margin-right: 1rem;
     padding: 1rem;
     box-sizing: border-box;
   }
@@ -190,7 +255,7 @@
   }
 
   .charts {
-    width: 90%;
+    width: 89%;
     height: auto;
     margin-top: 1rem;
     box-sizing: border-box;

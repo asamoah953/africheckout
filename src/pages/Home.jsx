@@ -7,7 +7,7 @@ import LineChart from '../components/chart';
 function Home( {moneyInfo} ){
     return(
         <>
-        <h3 style={{display:"inline-block", marginLeft:'16rem', position:"absolute", marginTop:"1.7rem", fontSize:"2rem"}}>Dashboard</h3>
+        <h3 className='text' style={{display:"inline-block", marginLeft:'16rem', position:"absolute", marginTop:"1.7rem", fontSize:"2rem"}}>Dashboard</h3>
        <div className="dashboard-home" >
         <div className="dashboard-div">
             {

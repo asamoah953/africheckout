@@ -7,7 +7,7 @@ function PayoutRequest() {
 
             <div className='producton-header'>
                 
-                <div className="product-button"><h2 style={{marginTop:'4px',fontSize:'2.2rem',color:'black' }}>Products</h2> <button className="button" style={{width:'9rem'}}>Payout Requests</button></div>
+                <div className="product-button"><h2 style={{marginTop:'4px',fontSize:'2.2rem',color:'black' }}>Payout Request</h2> <button className="button" style={{width:'9rem'}}>Payout Requests</button></div>
             </div>
 
            <div className="production-list">

@@ -76,6 +76,45 @@
     color: white;
 }
 
+
+@media screen and (max-width: 1440px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    .logo-container {
+        width: 15rem; /* Adjusted for smaller screen */
+    }
+
+    .logo {
+        width: 8rem;
+        margin-left: 15px;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        font-size: 22px;
+        margin: 10px;
+        margin-top: 1.2rem;
+    }
+
+    .menu-icon {
+        margin: 1.2rem;
+    }
+
+    .profile {
+        width: 1rem;
+        height: 1rem;
+        padding: 0.8rem;
+        margin-right: 0.5rem;
+    }
+
+    .profile-firstletter {
+        font-size: 0.9rem;
+    }
+}
+
+
 @media (min-width:63.9375rem) {
     .menu-icon {
 
@@ -130,7 +169,7 @@
 
 @media (max-width: 425px) {
   .header-container {
-    width: 24rem;
+    width: 22.5rem;
     height: 3.5rem; 
     padding: 0 0.5rem;
     margin-right: .3rem;

@@ -25,11 +25,14 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
 
             <div className={!dashBoard ? 'dashboard-container shrink' : 'dashboard-container'}>
-                <BiX style={{position:'absolute',right:'.7rem',fontSize:'2.5rem', backgroundColor:'gray', color:'red',borderRadius:'2rem',cursor:'pointer'}} onClick={()=>setDashBoard(prev=>!prev)}/>
+                <BiX className='cancel' style={{position:'absolute',right:'.7rem',fontSize:'2.5rem', backgroundColor:'gray', color:'red',borderRadius:'2rem',cursor:'pointer'}} onClick={()=>setDashBoard(prev=>!prev)}/>
 
 
 
-                <img alt="Africheckout logo" src="https://africheckout.com/images/logo.png" className="logo1"></img>
+                {
+                    dashBoard &&
+                    <img alt="Africheckout logo" src="https://africheckout.com/images/logo.png" className="logo1"></img>
+                }
 
                 <Link to='/' onClick={()=>setDashBoard(prev=>!prev)}>
                     <div className="home-container">
@@ -67,7 +70,7 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
                 <div className="accounts-container">
                     {
-                        dashBoard && <h3 className="dash">Accounts 
+                        dashBoard && <h3 className="dash" style={{marginTop:'1.7rem'}}>Accounts 
                         {
                             account && <IoIosArrowDown className='arrow' style={{ marginLeft:'10rem', cursor:'pointer'}} onClick={()=>setAccount(prev=> !prev)}/>
 

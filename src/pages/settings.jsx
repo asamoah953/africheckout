@@ -5,7 +5,7 @@ function Settings(){
             <div className="compliance-page">
                 <div>
                     <h3 >Change Password</h3>
-                    <h3 style={{color:'gray', fontSize:'.7rem'}}>Change User Password</h3>
+                    <h3 className="graytext" style={{color:'gray', fontSize:'.7rem'}}>Change User Password</h3>
                 </div>
 
                 <div>
@@ -20,7 +20,7 @@ function Settings(){
 
                 <div>
                     <h3>API Keys & Webhooks</h3>
-                    <h3  style={{color:'gray', fontSize:'.7rem'}}>Integrate Africheckout to your website/app using <br />these API keys and webhook</h3>
+                    <h3 className="graytext" style={{color:'gray', fontSize:'.7rem'}}>Integrate Africheckout to your website/app using <br />these API keys and webhook</h3>
                 </div>
 
                 <div>

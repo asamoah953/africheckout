@@ -130,11 +130,10 @@
 /* Mobile responsive styles for 375px width screens */
 @media (max-width: 375px) {
   
-  /* Shrink dashboard sidebar width */
   .dashboard-container {
-    width: 100vw; /* full width on mobile */
+    width: 100vw;
     height: auto;
-    position: fixed; /* sidebar overlay */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -144,27 +143,26 @@
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   }
   
-  /* When shrink class is applied, hide sidebar completely */
+
   .dashboard-container.shrink {
     width: 0;
     overflow: hidden;
     transition: width 0.3s ease;
   }
   
-  /* Position the close icon properly */
+
   .dashboard-container > svg {
     right: 1rem !important;
     top: 1rem !important;
   }
   
-  /* Logo resizing */
+ 
   .logo1 {
     width: 8rem;
     height: 2rem;
     margin: 10px 10px 10px 15px;
   }
-  
-  /* Reduce margins in containers */
+
   .home-container,
   .product-container,
   .transaction-container,
@@ -183,7 +181,7 @@
     margin-left: 6rem !important;
   }
 
-  /* Dash text styling */
+ 
   .dash {
     font-size: 0.8rem;
     margin-left: 0.5rem !important;
@@ -256,3 +254,5 @@
     transition: all 0.3s ease;
 }
 } */
+
+

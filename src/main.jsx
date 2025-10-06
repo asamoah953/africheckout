@@ -8,6 +8,7 @@ import '../CSS/product.css'
 import '../CSS/transaction.css'
 import '../CSS/searchBar.css'
 import '../CSS/compliancepage.css'
+import '../CSS/payout.css'
 import App from './App.jsx'
 import {BrowserRouter} from 'react-router-dom'
 
