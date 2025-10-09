@@ -1,20 +1,21 @@
-.main-compliance-container {
+/* .main-compliance-container {
     width: 65%;
     min-height: 100vh;
     margin: 30px auto;
     background-color: #f9f9f9;
     padding: 2rem;
     position: relative;
+     margin-top: -55rem;
 }
 
-/* Main title */
+
 .main-compliance-container > h3 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #333;
 }
 
-/* Layout grid */
+
 .compliance-page {
     width: 100%;
     display: grid;
@@ -23,7 +24,7 @@
     margin-top: 3rem;
 }
 
-/* Section container */
+
 .compliance-page > div {
     background-color: white;
     padding: 1rem 1.5rem;
@@ -31,7 +32,7 @@
     border-radius: 8px;
 }
 
-/* Section titles */
+
 .compliance-page h3 {
     font-size: 1rem;
     color: #333;
@@ -39,7 +40,7 @@
     background-color: white;
 }
 
-/* Inputs */
+
 .compliance-page input[type="text"],
 .compliance-page input[type="date"] {
     width: 100%;
@@ -50,7 +51,6 @@
     font-size: 1rem;
 }
 
-/* Buttons */
 .compliance-page button {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
@@ -67,65 +67,23 @@
     background-color: #0056b3;
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 425px) {
     .main-compliance-container {
-        width: 90%;
-        padding: 1.5rem;
-    }
-
-    .main-compliance-container > h3 {
-        font-size: 2rem;
-        text-align: center;
-        position: static;
-    }
-
-    .compliance-page {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .compliance-page > div {
+        width: 95%;
+        margin: 1rem auto;
         padding: 1rem;
-    }
-
-    .compliance-page h3 {
-        font-size: 0.95rem;
-    }
-
-    .compliance-page input[type="text"],
-    .compliance-page input[type="date"] {
-        font-size: 0.95rem;
-        padding: 0.5rem;
-    }
-
-    .compliance-page button {
-        width: 100%;
-        font-size: 1rem;
-    }
-}
-
-
-/* ✅ Responsive styling for 425px and smaller */
-@media screen and (max-width: 425px) {
-    .main-compliance-container {
-        width: 100%;
-        margin: 0 auto;
-        padding: 1rem;
+        margin-top: 2rem; /* Override negative margin 
     }
 
     .main-compliance-container > h3 {
         font-size: 1.8rem;
         text-align: center;
-        position: static;
     }
 
-  
-
     .compliance-page {
-        grid-template-columns: 1fr; /* Stack sections vertically */
+        grid-template-columns: 1fr;
         gap: 1.2rem;
-        margin-top: 2rem;
     }
 
     .compliance-page > div {
@@ -145,6 +103,183 @@
     .compliance-page button {
         width: 100%;
         font-size: 1rem;
-        padding: 0.8rem;
     }
+} */
+
+/* ======= Base Styles (Desktop First) ======= */
+
+.main-compliance-container {
+  width: 100%;
+  padding: 2rem 3rem 3rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.main-compliance-container > h3 {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.compliance-page {
+  margin-top: 4.5rem;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  box-sizing: border-box;
+}
+
+/* Section titles */
+.compliance-page > div h3 {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Subtitles in gray */
+.compliance-page > div h3[style*="color:gray"] {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.compliance-page input[type="text"],
+.compliance-page input[type="date"] {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.compliance-page button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.compliance-page button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .main-compliance-container {
+    padding: 1rem 1.5rem 2rem;
+  }
+
+  .main-compliance-container > h3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .compliance-page {
+    display: block;
+    padding: 1rem 1rem 2rem;
+    margin-top: 0;
+  }
+
+  .compliance-page > div {
+    margin-bottom: 2rem;
+  }
+
+  .compliance-page input[type="text"],
+  .compliance-page input[type="date"] {
+    font-size: 0.95rem;
+  }
+
+  .compliance-page button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-compliance-container {
+    padding: 1.5rem 2rem 2.5rem;
+  }
+
+  .main-compliance-container > h3 {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    left: auto;
+    top: auto;
+  }
+
+  .compliance-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    margin-top: 0;
+  }
+
+  .compliance-page > div {
+    margin-bottom: 1.5rem;
+  }
+
+  .compliance-page button {
+    width: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-compliance-container {
+    padding: 2rem 3rem 3rem;
+  }
+
+  .main-compliance-container > h3 {
+    font-size: 2.2rem;
+    text-align: left;
+    position: absolute;
+    left: 3rem;
+    top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .compliance-page {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem 3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-compliance-container {
+    padding: 2rem 4rem 3rem;
+  }
+
+  .main-compliance-container > h3 {
+    font-size: 2.3rem;
+  }
+
+  .compliance-page {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem 4rem;
+  }
 }

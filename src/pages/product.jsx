@@ -14,7 +14,7 @@ function Product() {
 
            <div className="production-list">
             <BiX style={{marginLeft:'48%', fontSize:'2rem'}}/>
-            <h3 className="prod" style={{marginLeft:'45%',marginTop:'.2rem', backgroundColor:'white'}}>No Product</h3>
+            <h3 className="prod" >No Product</h3>
            </div>
 
 

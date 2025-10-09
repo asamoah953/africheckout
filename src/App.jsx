@@ -9,11 +9,13 @@ import Settings from './pages/settings';
 import PayOut from './pages/payout';
 import PayoutRequest from './pages/payoutRequest';
 import NewProduct from './pages/newProduct';
+import NewPayOutAccount from './pages/newPayoutAccount';
 import { useState } from 'react';
 
 
 function App() {
   const [clicked, setClick] = useState(true);
+   const [showPopup, setShowPopup] = useState(false);
 
 
   const moneyInfo = [
@@ -34,14 +36,15 @@ function App() {
       <DashBoard dashBoard={clicked} setDashBoard={setClick} />
 
       <Routes>
-        <Route path='/' element={<Home moneyInfo={moneyInfo} />} />
-        <Route path='/product' element={<Product />} />
+         <Route path='/' element={<Home moneyInfo={moneyInfo} />} />
+       <Route path='/product' element={<Product />} />
         <Route path='/transaction' element={<Transaction />} />
         <Route path='/compliance' element={<Compliance />} />
         <Route path='/settings' element={<Settings />} />
-        <Route path='/payout' element={<PayOut />} />
-        <Route path='/request' element={<PayoutRequest />} />
+        <Route path='/payout' element={<PayOut   />} />
+        <Route path='/request' element={<PayoutRequest showPopup={showPopup}setShowPopup={setShowPopup} />} />
         <Route path='/newproduct' element={<NewProduct />} />
+        <Route path='/newpayoutaccount' element={<NewPayOutAccount  />} />
       </Routes>
 
 
@@ -50,4 +53,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

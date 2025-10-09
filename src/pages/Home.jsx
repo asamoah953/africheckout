@@ -7,9 +7,10 @@ import LineChart from '../components/chart';
 function Home( {moneyInfo} ){
     return(
         <>
-        <h3 className='text' style={{display:"inline-block", marginLeft:'16rem', position:"absolute", marginTop:"1.7rem", fontSize:"2rem"}}>Dashboard</h3>
        <div className="dashboard-home" >
-        <div className="dashboard-div">
+                <h3 className='dashboardText' >Dashboard</h3>
+
+         <div className="dashboard-div">
             {
                 moneyInfo.map((info)=>(
                     <div className='payout'  key={info.key}>
@@ -30,13 +31,16 @@ function Home( {moneyInfo} ){
         <div>
             
             <LineChart />
-        </div>
+        </div> 
         </div>
 
         
  
         </>
     )
+
+
+
 }
 
 export default Home;

@@ -1,10 +1,10 @@
-.production-container {
+/* .production-container {
     width: 70%;
     display: inline-block;
     position: absolute;
     margin: 5rem;
-    margin-left: 12rem;
-    margin-top: 2rem;
+    margin-left: 20rem;
+    margin-top: -55rem;
 }
 
 .producton-header {
@@ -29,7 +29,18 @@
     border-radius: 12px;
     cursor: pointer;
     background-color: #F59E0B;
+    color: white;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.button:hover {
+    background-color: #d97706;
+    transform: translateY(-2px);
+}
+
 
 .production-list {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -43,12 +54,15 @@
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     text-align: center;
+    margin-top: 5rem;
 }
 
 .prod {
     margin-top: 0.2rem;
     background-color: white;
-}
+    background-color:'white'
+    }
+
 
 .list {
     display: inline-block;
@@ -60,79 +74,11 @@
     margin-right: 0.5rem;
 }
 
-
-@media(max-width:800px){
+@media(max-width: 425px) {
     .production-container {
-    width: 90%;
-    display: block;
-    position: relative;
-    margin: 2rem auto;
-}
-
-.producton-header {
-    width: 100%;
-    height: 2rem;
-    font-size: small;
-    color: gray;
-    text-align: center;
-}
-
-.product-button {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-    gap: 0.5rem;
-}
-
-.button {
-    flex: 1 1 calc(33% - 1rem); /* responsive sizing */
-    min-width: 6rem;
-    max-width: 8rem;
-    height: 2.3rem;
-    margin-top: 0.7rem;
-    border-radius: 12px;
-    cursor: pointer;
-}
-
-.production-list {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: auto;
-    margin-top: 5rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    text-align: center;
-}
-
-.prod {
-    margin-top: 0.2rem;
-    background-color: white;
-}
-
-.list, .list1 {
-    display: inline-block;
-    margin-right: 0.5rem;
-    word-wrap: break-word;
-}
-
-}
-/* Responsive Mobile Styles (up to 425px) */
-@media (max-width: 425px) {
-    .production-container {
-        width: 95%;
-        margin: 1rem auto;
+        width: 90%;
+        margin: 1rem;
         position: static;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .producton-header {
@@ -141,57 +87,210 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.3rem;
-        margin-bottom: 1rem;
+        width: 90%;
     }
 
     .product-button {
-        width: 100%;
-        flex-direction: column;
+        width: 110%;
+        flex-direction: row;
         align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .product-button h2 {
-        font-size: 1.5rem;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
     .button {
         width: 100%;
-        height: 2.5rem;
-        font-size: 1rem;
-        margin-top: 3rem;
+        max-width: 200px;
+        height: 2.1rem;
+        font-size: .7rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .production-list {
         width: 100%;
         height: auto;
-        padding: 1rem;
-        margin-top: 10.5rem;
+        padding: 2rem 1rem;
+        margin-top: 7rem;
     }
 
     .prod {
-        font-size: 1rem;
-        margin: 0.5rem auto 0;
-        
+        font-size: .8rem;
     }
 
-    .production-list svg {
-        font-size: 2rem;
-        margin: 0 auto;
-    }
-
-    .list {
+    .list, .list1 {
+        margin-bottom: 0.5rem;
         display: inline-block;
-        margin-bottom: 0.6rem;
-        position: absolute;
-        top: 4.5rem;
-        margin-left: 7rem;
-
     }
+} */
 
-    .list1 {
-        display: inline-block;
+/* ======= Base Styles (Desktop First) ======= */
+.production-container {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
 
-    }
+.producton-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.list1,
+.list {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.product-button {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.product-button h2 {
+  font-size: 2.2rem;
+  color: black;
+  margin: 0;
+}
+
+.button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.production-list {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.prod {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+@media (max-width: 480px) {
+  .production-container {
+    padding: 1rem;
+  }
+
+  .producton-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list1,
+  .list {
+    font-size: 1rem;
+  }
+
+  .product-button {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .product-button h2 {
+    font-size: 1.6rem;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .production-list {
+    padding: 1.5rem 1rem;
+  }
+
+  .prod {
+    font-size: 1.3rem;
+  }
+
+  .production-list svg {
+    margin-left: 0;
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .producton-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-button {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-button h2 {
+    font-size: 1.8rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .prod {
+    font-size: 1.4rem;
+  }
+
+  .production-list svg {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product-button h2 {
+    font-size: 2rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+
+  .prod {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .producton-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-button {
+    flex-direction: row;
+    align-items: center;
+  }
 }

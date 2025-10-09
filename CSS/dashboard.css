@@ -1,258 +1,187 @@
 .dashboard-container {
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-    width: 19.5rem;
-    height: 93.5vh;
-    background-color: #FAFAFA;
-    color: #8C8C91;
-
+  padding: 1rem 0;
+  width: 19.5rem;
+  height: 94.59vh;
+  margin-right: 4rem;
+  position: relative;
 }
 
 .shrink {
-    width: 4rem;
+  width: 70px;
 }
 
 
 
-.home-container {
-    margin-top: 2rem;
-}
-
-.logo1 {
-    height: 2.5rem;
-    width: 10rem;
-    position: relative;
-    margin: 10px 1px 1px 25px;
-    background-color: #FFFFFF;
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
 
 }
 
-.dashBoard-wrapper {
-    display: inline-block;
+.sidebar-logo {
+  height: 24px;
 }
 
-.home-container,
-.product-container,
-.transaction-container,
-.compliance-container,
-.settings-container,
-.payoutAccount-container,
-.request-container {
-    width: 90%;
-    border-radius: 8px;
-    padding: 8px;
-    margin-left: 1.5rem;
-    margin-bottom: -9px;
-    font-size: 20px;
-    background-color: #FAFAFA;
-    transition: all 0.3s ease;
+.nav-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-
-
-
-
-.payoutAccount-container{
-    margin-top: 1.6rem;
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
-.accounts-container,
-.payout-container {
-    margin-left: 1rem;
+.nav-item:hover {
+  background-color: #f5f5f5;
+}
+
+.home-icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
 }
 
 .dash {
-    display: inline-block;
-    margin-left: 1rem;
-    background-color: #FAFAFA;
-    font-size: .9rem;
-    position: absolute;
-    
+  display: inline-block;
+  margin-left: 4rem;
+  font-size: 2rem;
 }
 
-.dash:hover {
-    display: inline-block;
-    margin-left: 1rem;
+.nav-text {
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
-
-
-
-
-
-.home-container:hover,
-.product-container:hover,
-.transaction-container:hover,
-.compliance-container:hover,
-.settings-container:hover,
-.payoutAccount-container:hover,
-.request-container:hover {
-    background-color: #f4f4f5e0;
-    cursor: pointer;
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 13px;
+  color: #555;
+  padding: 0 25px;
+  width: 19rem;
 }
 
-.home-icon:hover {
-    background-color: #f4f4f5e0;
+.toggle-icon {
+  cursor: pointer;
+  font-size: 14px;
 }
 
-
-
-@media (max-width:63.9375rem) {
-    .dashboard-container {
-        position: relative;
-        top: -64px;
-        display: flex;
-        flex-direction: column;
-        gap: 17px;
-        width: 19.5rem;
-        height: 100vh;
-        background-color: #FAFAFA;
-        color: #8C8C91;
-        box-shadow: #8C8C91;
-        border: 1px solid #e8e8eb;
-    }
-
-    .vanish {
-    display: none;
-}
-
-
-}
-
-@media (min-width:63.9375rem) {
-.logo1{
-    display: none;
-}
-
-}
-
-/* Mobile responsive styles for 375px width screens */
-@media (max-width: 375px) {
-  
-  .dashboard-container {
-    width: 100vw;
-    height: auto;
+@media (max-width: 800px) {
+  .dashboard-wrapper {
     position: fixed;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    z-index: 2000;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .dashboard-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .shrink {
+    width: 60px;
+  }
+
+  .nav-item {
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-icon {
+    font-size: 1.2rem;
+  }
+
+  .nav-text {
+    font-size: 0.9rem;
+  }
+
+  .section-header {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-icon {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .vanish {
+    transform: translateX(-100%);
+  }
+
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .dashboard-wrapper {
+    position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 1000;
-    background-color: #FAFAFA;
-    overflow-y: auto;
-    padding-bottom: 2rem;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  }
-  
-
-  .dashboard-container.shrink {
-    width: 0;
-    overflow: hidden;
-    transition: width 0.3s ease;
-  }
-  
-
-  .dashboard-container > svg {
-    right: 1rem !important;
-    top: 1rem !important;
-  }
-  
- 
-  .logo1 {
-    width: 8rem;
-    height: 2rem;
-    margin: 10px 10px 10px 15px;
-  }
-
-  .home-container,
-  .product-container,
-  .transaction-container,
-  .compliance-container,
-  .settings-container,
-  .payoutAccount-container,
-  .request-container {
-    width: 95%;
-    margin-left: 0.5rem;
-    font-size: 16px;
-    padding: 6px 8px;
-  }
-
-  /* Arrow icon margins */
-  .arrow {
-    margin-left: 6rem !important;
-  }
-
- 
-  .dash {
-    font-size: 0.8rem;
-    margin-left: 0.5rem !important;
-    position: relative !important; /* remove absolute on mobile */
-  }
-
-  /* Hover effects */
-  .home-container:hover,
-  .product-container:hover,
-  .transaction-container:hover,
-  .compliance-container:hover,
-  .settings-container:hover,
-  .payoutAccount-container:hover,
-  .request-container:hover {
-    background-color: #f4f4f5e0;
-    cursor: pointer;
-  }
-  
-  /* Scrollable sidebar */
-  .dashBoard-wrapper {
+    background-color: #fff;
     height: 100vh;
     overflow-y: auto;
-    width: 100vw;
+    transition: transform 0.3s ease;
+  }
+
+  .dashboard-container {
+    width: 100%;
+    margin-right: 0;
+    padding: 1rem;
+  }
+
+  .shrink {
+    display: none;
+  }
+
+  .logo-wrapper{
+    height: 4rem;
+    width: 9rem;
+  }
+
+  .section-header {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .nav-item {
+    padding: 10px 15px;
+    gap: 8px;
+  }
+
+  .nav-text {
+    font-size: 13px;
+  }
+
+  .vanish {
+    transform: translateX(-100%);
   }
 }
-
-
-
-/* @media (max-width: 320px) {
-    .dashboard-container {
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-    width: 14.5rem;
-    height: 93.5vh;
-    background-color: #FAFAFA;
-    color: #8C8C91;
-    font-size: 21rem;
-    position: absolute;
-
-}
-
-.dash {
-    display: inline-block;
-    margin-left: 1rem;
-    background-color: #FAFAFA;
-    font-size: .6rem;
-    position: absolute;
-    
-}
-
-.arrow {
-    display: none;
-}
-
-.home-container,
-.product-container,
-.transaction-container,
-.compliance-container,
-.settings-container,
-.payoutAccount-container,
-.request-container {
-    width: 70%;
-    border-radius: 8px;
-    padding: 8px;
-    margin-left: 1.5rem;
-    margin-bottom: -9px;
-    font-size: 20px;
-    background-color: #FAFAFA;
-    transition: all 0.3s ease;
-}
-} */
-
-

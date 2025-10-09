@@ -17,127 +17,6 @@ function DashBoard({ dashBoard, setDashBoard }) {
     const [account, setAccount] = useState(true);
     const [payout, setPayout] = useState(true)
 
-    return (
-
-
-        <div className={!dashBoard ? 'dashBoard-wrapper vanish' : 'dashBoard-wrapper '}>
-
-
-
-            <div className={!dashBoard ? 'dashboard-container shrink' : 'dashboard-container'}>
-                <BiX className='cancel' style={{position:'absolute',right:'.7rem',fontSize:'2.5rem', backgroundColor:'gray', color:'red',borderRadius:'2rem',cursor:'pointer'}} onClick={()=>setDashBoard(prev=>!prev)}/>
-
-
-
-                {
-                    dashBoard &&
-                    <img alt="Africheckout logo" src="https://africheckout.com/images/logo.png" className="logo1"></img>
-                }
-
-                <Link to='/' onClick={()=>setDashBoard(prev=>!prev)}>
-                    <div className="home-container">
-                        <AiOutlineHome className="home-icon" />
-                        {
-                            dashBoard && <h3 className="dash">Dashboard</h3>
-                        }
-
-
-                    </div>
-                </Link>
-
-
-                <Link to='/product' onClick={()=>setDashBoard(prev=>!prev)}>
-
-                    <div className="product-container">
-                        <TfiMenuAlt className="home-icon" />
-                        {
-                            dashBoard && <h3 className="dash">Products</h3>
-                        }
-
-                    </div>
-                </Link>
-
-                <Link to='/transaction' onClick={()=>setDashBoard(prev=>!prev)}>
-                    <div className="transaction-container">
-                        <AiOutlineDollarCircle className="home-icon" />
-                        {
-                            dashBoard && <h3 className="dash">Transactions</h3>
-                        }
-
-                    </div>
-                </Link>
-
-
-                <div className="accounts-container">
-                    {
-                        dashBoard && <h3 className="dash" style={{marginTop:'1.7rem'}}>Accounts 
-                        {
-                            account && <IoIosArrowDown className='arrow' style={{ marginLeft:'10rem', cursor:'pointer'}} onClick={()=>setAccount(prev=> !prev)}/>
-
-                        }
-                        {
-                           !account && <IoChevronUpOutline className="arrow" style={{ marginLeft:'10rem', cursor:'pointer'}} onClick={()=>setAccount(prev=>!prev)}/>
-                        }
-                        </h3>
-                        
-                    }
-
-                </div>
-
-                    {
-                         !account &&  <Link to='/compliance' onClick={()=>setDashBoard(prev=>!prev)}><div className="compliance-container">
-                    <LuFileText className="home-icon" />
-                    {
-                        dashBoard && <h3 className="dash">Compliance</h3>
-                    }
-
-                </div></Link>
-                    }
-
-                 {
-                    !account && <Link to='/settings' onClick={()=>setDashBoard(prev=>!prev)}><div className="settings-container">
-                    <BsTools className="home-icon" />
-                    {
-                        dashBoard && <h3 className="dash">Settings</h3>
-                    }
-
-                </div></Link>
-                 }
-                    
-
-                <div className="payout-container">
-                    {
-                        dashBoard && <h3 className="dash" style={{marginTop:'1.7rem'}}>Payouts 
-                        {
-                            payout && <IoIosArrowDown className="arrow" style={{ marginLeft:'10.7rem', cursor:'pointer'}} onClick={()=>setPayout(prev=> !prev)}/>
-
-                        }
-                        {
-                           !payout && <IoChevronUpOutline className="arrow" style={{ marginLeft:'10.7rem', cursor:'pointer'}} onClick={()=>setPayout(prev=>!prev)}/>
-                        }
-                        </h3>
-                    }
-
-
-                </div>
-                {
-                   !payout && <Link to='/payout' onClick={()=>setDashBoard(prev=>!prev)}><div className="payoutAccount-container">
-                    <MdOutlinePayment className="home-icon" />
-                    {
-                        dashBoard && <h3 className="dash">Payout Accounts</h3>
-                    }
-                </div></Link>
-                }
-               {
-                 !payout && <Link to='/request'  onClick={()=>setDashBoard(prev=>!prev)}><div className="request-container">
-                    <IoMdSend className="home-icon" />
-                    {
-                        dashBoard && <h3 className="dash">Payout Request</h3>
-                    }
-                </div></Link>
-               }
-            </div>
-        </div>
 
 
 
@@ -148,7 +27,105 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
 
 
-    )
+    // )
+     return (
+    <div className={!dashBoard ? 'dashboard-wrapper vanish' : 'dashboard-wrapper'}>
+      <div className={!dashBoard ? 'dashboard-container shrink' : 'dashboard-container'}>
+        
+         {dashBoard && (
+          <div className="logo-wrapper">
+            <img
+              alt="Africheckout logo"
+              src="https://africheckout.com/images/logo.png"
+              className="sidebar-logo"
+            />
+          </div>
+        )} 
+
+        {/* Main Links */}
+        <Link to='/' className="nav-link" onClick={() => setDashBoard(false)}>
+          <div className="nav-item">
+            <AiOutlineHome className="nav-icon" />
+            {dashBoard && <span className="nav-text">Dashboard</span>}
+          </div>
+        </Link>
+
+        <Link to='/product' className="nav-link"  onClick={() => setDashBoard(false)}>
+          <div className="nav-item">
+            <TfiMenuAlt className="nav-icon" />
+            {dashBoard && <span className="nav-text">Products</span>}
+          </div>
+        </Link>
+
+        <Link to='/transaction' className="nav-link"  onClick={() => setDashBoard(false)}>
+          <div className="nav-item">
+            <AiOutlineDollarCircle className="nav-icon" />
+            {dashBoard && <span className="nav-text">Transactions</span>}
+          </div>
+        </Link>
+
+        {/* Accounts Section */}
+        {dashBoard && (
+          <div className="section-header">
+            <span>Accounts</span>
+            {account ? (
+              <IoIosArrowDown className="toggle-icon" onClick={() => setAccount(prev => !prev)} />
+            ) : (
+              <IoChevronUpOutline className="toggle-icon" onClick={() => setAccount(prev => !prev)} />
+            )}
+          </div>
+        )}
+
+        {!account && (
+          <>
+            <Link to='/compliance' className="nav-link"  onClick={() => setDashBoard(false)}>
+              <div className="nav-item">
+                <LuFileText className="nav-icon" />
+                {dashBoard && <span className="nav-text">Compliance</span>}
+              </div>
+            </Link>
+
+            <Link to='/settings' className="nav-link"  onClick={() => setDashBoard(false)}>
+              <div className="nav-item">
+                <BsTools className="nav-icon" />
+                {dashBoard && <span className="nav-text">Settings</span>}
+              </div>
+            </Link>
+          </>
+        )}
+
+        {/* Payouts Section */}
+        {dashBoard && (
+          <div className="section-header">
+            <span>Payouts</span>
+            {payout ? (
+              <IoIosArrowDown className="toggle-icon" onClick={() => setPayout(prev => !prev)} />
+            ) : (
+              <IoChevronUpOutline className="toggle-icon" onClick={() => setPayout(prev => !prev)} />
+            )}
+          </div>
+        )}
+
+        {!payout && (
+          <>
+            <Link to='/payout' className="nav-link"  onClick={() => setDashBoard(false)}>
+              <div className="nav-item">
+                <MdOutlinePayment className="nav-icon" />
+                {dashBoard && <span className="nav-text">Payout Accounts</span>}
+              </div>
+            </Link>
+
+            <Link to='/request' className="nav-link"  onClick={() => setDashBoard(false)}>
+              <div className="nav-item">
+                <IoMdSend className="nav-icon" />
+                {dashBoard && <span className="nav-text">Payout Request</span>}
+              </div>
+            </Link>
+          </>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default DashBoard;
