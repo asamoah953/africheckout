@@ -47,7 +47,7 @@
 }
 
 .earning {
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-radius: 10px 10px 0 0;
   padding: 1rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -56,6 +56,8 @@
 
 .text {
   font-size: 1.2rem;
+    background-color: #FFFFFF;
+
 }
 
 .charts {
@@ -74,7 +76,6 @@
 
 
 
-/* ======= Media Queries for Responsiveness ======= */
 
 /* 📱 Mobile phones: <= 480px */
 @media (max-width: 480px) {
@@ -118,8 +119,61 @@
   }
 }
 
+@media (min-width: 600px) and (max-width: 834px) {
+  .dashboard-home {
+    padding: 1rem;
+  }
 
-/* 📲 Tablets: 481px - 768px */
+ .dashboardText {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  margin-top: -5rem;
+}
+
+
+  .dashboard-div {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: -66rem;
+  }
+
+  .payout {
+    padding: 1rem;
+  }
+
+  .icon {
+    font-size: 1.25rem;
+  }
+
+  .txt {
+    font-size: 0.95rem;
+    margin-left: 0.4rem;
+  }
+
+  .money-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .earning {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+
+  .charts {
+    padding: 0;
+    border-radius: 0 0 0.75rem 0.75rem;
+  }
+}
+
+
+/* 
 @media (min-width: 481px) and (max-width: 768px) {
   .dashboardText {
     font-size: 2rem;
@@ -146,10 +200,10 @@
   .text {
     text-align: center;
   }
-}
+} */
 
 
-/* 💻 Small Laptops: 769px - 1024px */
+/* 💻 Small Laptops: 769px - 1024px
 @media (min-width: 769px) and (max-width: 1024px) {
   .dashboardText {
     font-size: 2.2rem;
@@ -162,9 +216,13 @@
   .money-info h3 {
     font-size: 1.7rem;
   }
-}
 
-/* 🖥️ Desktops: > 1024px */
+
+  .dashboard-home{
+    margin-top: -30rem;
+  }
+}*/ 
+
 @media (min-width: 1025px) {
   .dashboard-div {
     grid-template-columns: repeat(3, 1fr);

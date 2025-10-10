@@ -79,7 +79,237 @@
   font-size: 14px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 1025px) {
+
+  .dashboard-wrapper {
+    position: fixed;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    z-index: 2000;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .dashboard-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .shrink {
+    width: 6rem;
+  }
+
+
+  .sidebar-logo {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-icon {
+    font-size: 1.2rem;
+  }
+
+  .nav-text {
+    font-size: 0.9rem;
+  }
+
+  .section-header {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-icon {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .vanish {
+    transform: translateX(-100%);
+
+  }
+
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 834px) {
+  .dashboard-container {
+    width: 13rem;
+    /* Reduce sidebar width */
+    padding: 0.5rem 0;
+    margin-right: 2rem;
+  }
+
+  .dashboard-container.shrink {
+    display: none;
+    /* width: 3.5rem; */
+    /* Shrink mode width */
+  }
+
+  .logo-wrapper {
+    padding: 0.5rem 0;
+  }
+
+  .sidebar-logo {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 8px 16px;
+    gap: 8px;
+  }
+
+  .nav-text {
+    font-size: 13px;
+  }
+
+  .section-header {
+    font-size: 12px;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .toggle-icon {
+    font-size: 13px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .dashboard-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    height: 100vh;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .dashboard-container {
+    width: 100%;
+    margin-right: 0;
+    padding: 1rem;
+  }
+
+  .shrink {
+    display: none;
+  }
+
+  .logo-wrapper {
+    height: 4rem;
+    width: 9rem;
+  }
+
+  .section-header {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .nav-item {
+    padding: 10px 15px;
+    gap: 8px;
+  }
+
+  .nav-text {
+    font-size: 13px;
+  }
+
+  .vanish {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* 
+@media (min-width: 769px) and (max-width: 1024px) {
+
+.dashboard-wrapper {
+    position: fixed;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    z-index: 2000;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .dashboard-container {
+    width: 100%;
+    padding: 1rem;
+    margin-top: -3.2rem;
+  }
+
+  .shrink {
+    /* width: 60px; 
+    display: none;
+  }
+
+
+  .sidebar-logo {
+    height: 3rem;
+  }
+
+  .nav-item {
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-icon {
+    font-size: 1.2rem;
+  }
+
+  .nav-text {
+    font-size: 0.9rem;
+  }
+
+  .section-header {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-icon {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .vanish {
+    transform: translateX(-100%);
+  }
+
+
+  body.sidebar-open {
+    overflow: hidden;
+  }
+  
+} */
+
+/* @media (max-width: 800px) {
   .dashboard-wrapper {
     position: fixed;
     width: 100%;
@@ -136,52 +366,4 @@
   body.sidebar-open {
     overflow: hidden;
   }
-}
-
-
-@media screen and (max-width: 425px) {
-  .dashboard-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #fff;
-    height: 100vh;
-    overflow-y: auto;
-    transition: transform 0.3s ease;
-  }
-
-  .dashboard-container {
-    width: 100%;
-    margin-right: 0;
-    padding: 1rem;
-  }
-
-  .shrink {
-    display: none;
-  }
-
-  .logo-wrapper{
-    height: 4rem;
-    width: 9rem;
-  }
-
-  .section-header {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .nav-item {
-    padding: 10px 15px;
-    gap: 8px;
-  }
-
-  .nav-text {
-    font-size: 13px;
-  }
-
-  .vanish {
-    transform: translateX(-100%);
-  }
-}
+} */

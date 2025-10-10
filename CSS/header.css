@@ -1,3 +1,165 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: width 0.3s ease;
+}
+
+.logo-container.shrink {
+  display: block;
+  width: 2.5rem;
+}
+
+.logo {
+  display: block;
+  height: 33px;
+    width: 9rem;
+    background-color: #fff;
+}
+
+/* Chevron icons */
+.left-arrow{
+  display: block;
+  margin-left: 9rem;
+  background-color:#ffffff;;
+}
+
+.right-arrow {
+  display: block;
+  margin-left: 1rem;
+  background-color: #ffffff;;
+}
+  
+
+
+/* Menu icon (hidden by default on desktop) */
+.menu-icon {
+  display: none;
+}
+
+/* Profile circle */
+.profile {
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-firstletter {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: black;
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0.75rem 1rem;
+    
+  }
+
+  .logo-container {
+    gap: 0.5rem;
+  }
+
+  .logo-container.shrink {
+    display: flex; /* Show even when shrunk on mobile */
+  }
+
+  .logo {
+    display: none;
+    
+  }
+
+  
+  .right-arrow {
+    display: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+
+  .left-arrow{
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    font-size: 1.3rem;
+    margin-left: -20rem;
+    
+  }
+
+  .profile {
+    width: 32px;
+    height: 32px;
+  }
+
+  .profile-firstletter {
+    font-size: 0.9rem;
+  }
+}
+
+ @media (min-width: 600px) and (max-width: 834px) {
+  .header-container {
+    padding: 1rem;
+  }
+
+  .logo-container {
+    gap: 0.5rem;
+  }
+
+  .logo-container.shrink {
+    width: 2.5rem;
+  }
+
+  .logo {
+    width: 7rem;
+  }
+
+  .left-arrow {
+    margin-left: 6rem;
+  }
+
+  .right-arrow {
+    margin-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .profile {
+    width: 36px;
+    height: 36px;
+  }
+
+  .profile-firstletter {
+    font-size: 0.9rem;
+  }
+}
+
+ 
+
 /* .header-container {
     display: flex;
     justify-content: space-between;
@@ -22,7 +184,7 @@
     height: 33px;
     width: 9rem;
     background-color: #fff;
-    ;
+    
 }
 
 .profile {
@@ -137,70 +299,9 @@
 } */
 /* ====== Base Header Styles (Desktop First) ====== */
 /* ======= Base Styles (Desktop First) ======= */
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #ffffff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
 
-/* Logo container */
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  transition: width 0.3s ease;
-}
-
-.logo-container.shrink {
-  display: none;
-}
-
-.logo {
-  display: none;
-}
-
-/* Chevron icons */
-.left-arrow,
-.right-arrow {
-  display: none;
-}
-
-/* Menu icon (hidden by default on desktop) */
-.menu-icon {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #333;
-  margin-right: 15rem;
-}
-
-/* Profile circle */
-.profile {
-  background-color: #333;
-  color: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profile-firstletter {
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: black;
-}
-
-
-@media (max-width: 480px) {
-  .header-container {
+/* @media (max-width: 480px) { */
+  /* .header-container {
     padding: 1rem;
   }
 
@@ -209,32 +310,38 @@
   }
 
   .logo {
-    height: 28px;
+    display: none;
   }
 
   .left-arrow,
   .right-arrow {
-    font-size: 1.2rem;
+    display: none;
   }
 
-  .menu-icon {
-    display: block;
-    font-size: 1.6rem;
+   .menu-icon {
+    display: flex;
+    font-size: 1.8rem;
+
   }
 
   .profile {
-    width: 32px;
-    height: 32px;
+    /* width: 32px;
+    height: 32px; 
+    display: none;
   }
 
   .profile-firstletter {
     font-size: 0.85rem;
-  }
-}
+  } 
 
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .logo {
+
+   
+}*/
+
+
+/* @media (min-width: 481px) and (max-width: 768px) { */
+  /* .logo {
     display: none;
   }
 
@@ -242,16 +349,15 @@
     display: none;
   }
 
-  .left-arrow,
   .right-arrow {
-    display: none;
+    display: block;
   }
 
-  .menu-icon {
+  /* .menu-icon {
     display: block;
     font-size: 1.8rem;
     margin-right: 39rem;
-  }
+  } 
 
   .profile {
     width: 36px;
@@ -260,12 +366,103 @@
 
   .profile-firstletter {
     font-size: 0.95rem;
+  } */
+   /* .header-container {
+    padding: 0.75rem 1rem;
+    
   }
-}
+
+  .logo-container {
+display: none;  }
+
+  .logo-container.shrink {
+    display: flex; /* Show even when shrunk on mobile 
+  }
+
+  .logo {
+    display: none;
+    
+  }
+
+  
+  .right-arrow {
+    display: block;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
 
 
+  .left-arrow{
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    
+  }
+
+  .profile {
+    width: 32px;
+    height: 32px;
+  }
+
+  .profile-firstletter {
+    font-size: 0.9rem;
+  } */
+
+  /* @media (max-width: 768px) {
+  .header-container {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .logo-container {
+    gap: 0.5rem;
+  }
+
+  .logo-container.shrink {
+    display: flex; /* Show logo container in shrink mode 
+  }
+
+  .logo {
+    display: block;
+    height: 30px;
+    width: auto;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    display: block;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.6rem;
+    color: #333;
+    margin-right: 1rem; /* reduce from 15rem for mobile 
+  }
+
+  .profile {
+    width: 35px;
+    height: 35px;
+  }
+
+  .profile-firstletter {
+    font-size: 0.95rem;
+  }
+} *
+
+}*/
+
+/* 
 @media (min-width: 769px) and (max-width: 1024px) {
-
+      .header-container {
+        height: 3.5rem;
+      }
 
   .logo {
     display: none;
@@ -277,8 +474,8 @@
   }
 
   .menu-icon {
-    display: block;
-        font-size: 1.8rem;
+    display: flex;
+    font-size: 1.8rem;
 
   }
 
@@ -305,18 +502,43 @@
 }
 
 
-@media (min-width: 1025px) {
-  .menu-icon {
+@media (min-width: 1025px) { 
+   .menu-icon {
     display: none;
   }
 
+
   .logo-container {
-        width: 100%;
-        font-size: 1.1rem;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 18.3rem;
+    height: 3rem;
+    background-color: #fff;
+}
+
+.logo {
+    height: 33px;
+    width: 9rem;
+    background-color: #fff;
+    
+}
+
+
+ 
+
+
+    .shrink {
+    width: 4.5rem;
+  }
+
 
   .logo {
-    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
   }
 
   .left-arrow,
@@ -325,11 +547,14 @@
   }
 
   .profile {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; 
+    display: 
+    none;
   }
 
   .profile-firstletter {
     font-size: 1rem;
-  }
-}
+  } */
+
+   

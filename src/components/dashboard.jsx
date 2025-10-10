@@ -27,7 +27,7 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
 
 
-    // )
+  
      return (
     <div className={!dashBoard ? 'dashboard-wrapper vanish' : 'dashboard-wrapper'}>
       <div className={!dashBoard ? 'dashboard-container shrink' : 'dashboard-container'}>

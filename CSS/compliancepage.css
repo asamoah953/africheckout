@@ -1,3 +1,132 @@
+.main-compliance-container {
+  width: 100%;
+  padding: 2rem 3rem 3rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.main-compliance-container > h3 {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.compliance-page {
+  margin-top: 4.5rem;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  box-sizing: border-box;
+}
+
+/* Section titles */
+.compliance-page > div h3 {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Subtitles in gray */
+.compliance-page > div h3[style*="color:gray"] {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.compliance-page input[type="text"],
+.compliance-page input[type="date"] {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.compliance-page button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.compliance-page button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .main-compliance-container {
+    padding: 1rem 1.5rem 2rem;
+  }
+
+  .main-compliance-container > h3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .compliance-title {
+    position: relative;
+  }
+
+
+  .compliance-page {
+    display: block;
+    padding: 1rem 1rem 2rem;
+    margin-top: 0;
+  }
+
+  .compliance-page > div { 
+    margin-bottom: 2rem;
+  }
+
+  .compliance-page input[type="text"],
+  .compliance-page input[type="date"] {
+    font-size: 0.95rem;
+  }
+
+  .compliance-page button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-compliance-container {
+    padding: 2rem 4rem 3rem;
+  }
+
+  .main-compliance-container > h3 {
+    font-size: 2.3rem;
+  }
+
+  .compliance-page {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem 4rem;
+  }
+}
+
 /* .main-compliance-container {
     width: 65%;
     min-height: 100vh;
@@ -108,114 +237,7 @@
 
 /* ======= Base Styles (Desktop First) ======= */
 
-.main-compliance-container {
-  width: 100%;
-  padding: 2rem 3rem 3rem;
-  box-sizing: border-box;
-  min-height: 100vh;
-  position: relative;
-  background-color: #f9f9f9;
-}
-
-.main-compliance-container > h3 {
-  position: absolute;
-  top: 1rem;
-  left: 3rem;
-  font-size: 2.3rem;
-  font-weight: 600;
-  color: #222;
-}
-
-.compliance-page {
-  margin-top: 4.5rem;
-  background-color: #fff;
-  padding: 2rem 3rem;
-  border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  box-sizing: border-box;
-}
-
-/* Section titles */
-.compliance-page > div h3 {
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-  color: #333;
-}
-
-/* Subtitles in gray */
-.compliance-page > div h3[style*="color:gray"] {
-  font-weight: 400;
-  font-size: 0.9rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-/* Inputs */
-.compliance-page input[type="text"],
-.compliance-page input[type="date"] {
-  width: 100%;
-  padding: 0.5rem 0.7rem;
-  margin-bottom: 1.2rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
-/* Buttons */
-.compliance-page button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 0.5rem;
-}
-
-.compliance-page button:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 480px) {
-  .main-compliance-container {
-    padding: 1rem 1.5rem 2rem;
-  }
-
-  .main-compliance-container > h3 {
-    position: relative;
-    top: auto;
-    left: auto;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  .compliance-page {
-    display: block;
-    padding: 1rem 1rem 2rem;
-    margin-top: 0;
-  }
-
-  .compliance-page > div {
-    margin-bottom: 2rem;
-  }
-
-  .compliance-page input[type="text"],
-  .compliance-page input[type="date"] {
-    font-size: 0.95rem;
-  }
-
-  .compliance-page button {
-    width: 100%;
-  }
-}
-
+/* 
 @media (min-width: 481px) and (max-width: 768px) {
   .main-compliance-container {
     padding: 1.5rem 2rem 2.5rem;
@@ -267,19 +289,5 @@
     padding: 2rem 3rem;
   }
 }
+ */
 
-@media (min-width: 1025px) {
-  .main-compliance-container {
-    padding: 2rem 4rem 3rem;
-  }
-
-  .main-compliance-container > h3 {
-    font-size: 2.3rem;
-  }
-
-  .compliance-page {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    padding: 2rem 4rem;
-  }
-}

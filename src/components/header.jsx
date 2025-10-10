@@ -33,7 +33,11 @@ function Header({clicked,setClick}) {
               
                 
             </div>
-            <FiMenu className="menu-icon" onClick={()=>setClick(prev =>!prev)}/>
+            {
+                !clicked &&
+                 <FiMenu className="menu-icon" onClick={()=>setClick(prev =>!prev)}/>
+            }
+           
 
                 <div className="profile">
                     <h3 className="profile-firstletter">A</h3>

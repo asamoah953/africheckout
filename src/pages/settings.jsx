@@ -1,7 +1,7 @@
 function Settings(){
     return(
         <div className="main-compliance-container">
-            <h3 style={{position:'absolute', fontSize:'2.3rem'}}>Settings</h3>
+            <h3 style={{position:'relative', fontSize:'2.3rem'}}>Settings</h3>
             <div className="compliance-page">
                 <div>
                     <h3 >Change Password</h3>

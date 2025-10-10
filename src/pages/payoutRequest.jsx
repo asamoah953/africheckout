@@ -44,11 +44,11 @@ function PayoutRequest({ showPopup, setShowPopup }) {
                     </div>
                 )}
 
-                <div className="p-button"><h2 style={{ marginTop: '4px', fontSize: '2.2rem', color: 'black' }}>Payout Request</h2><button className="button" style={{ width: '9rem' }} onClick={() => setShowPopup(true)}>Payout Requests</button></div>
+                <div className="p-button"><h2 className="request">Payout Request</h2><button className="button" style={{ width: '9rem' }} onClick={() => setShowPopup(true)}>Payout Requests</button></div>
             </div>
 
             <div className="production-list">
-                <BiX style={{ marginLeft: '48%', fontSize: '2rem' }} />
+                <BiX  />
                 <h3 className="no-pay">No Payout Account</h3>
             </div>
 

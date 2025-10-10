@@ -7,13 +7,13 @@ function Product() {
         <div className="production-container">
 
             <div className='producton-header'>
-                <h3 className='list1' >Product <GoChevronRight/></h3>
-                <h3 className='list' >List</h3>
-                <div className="product-button"><h2 style={{marginTop:'4px',fontSize:'2.2rem',color:'black' }}>Products</h2><Link to='/newproduct'><button className="button">New product</button></Link> </div>
+                {/* <h3 className='list1' >Product <GoChevronRight/></h3>
+                <h3 className='list' >List</h3><br /> */}
+                <div className="product-button"><h2 >Products</h2><Link to='/newproduct'><button className="button">New product</button></Link> </div>
             </div>
 
            <div className="production-list">
-            <BiX style={{marginLeft:'48%', fontSize:'2rem'}}/>
+            <BiX className="empty-icon"/>
             <h3 className="prod" >No Product</h3>
            </div>
 

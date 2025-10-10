@@ -1,7 +1,7 @@
 function Compliance(){
     return(
         <div className="main-compliance-container">
-            <h3 style={{position:'absolute', fontSize:'2.3rem'}}>Compliace</h3>
+            <h3 className="compliance-title" style={{position:'absolute', fontSize:'2.3rem'}}>Compliance</h3>
             <div className="compliance-page">
                 <div>
                     <h3 >Brand Details</h3>
