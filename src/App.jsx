@@ -10,12 +10,14 @@ import PayOut from './pages/payout';
 import PayoutRequest from './pages/payoutRequest';
 import NewProduct from './pages/newProduct';
 import NewPayOutAccount from './pages/newPayoutAccount';
+import UserMenu from './components/userMenu';
 import { useState } from 'react';
 
 
 function App() {
   const [clicked, setClick] = useState(true);
    const [showPopup, setShowPopup] = useState(false);
+   const [usermenu,setUsermenu]=useState(false);
 
 
   const moneyInfo = [
@@ -32,11 +34,11 @@ function App() {
   return (
     <>
 
-      <Header clicked={clicked} setClick={setClick} />
+      <Header clicked={clicked} setClick={setClick} setUserMenu={setUsermenu} />
       <DashBoard dashBoard={clicked} setDashBoard={setClick} />
-
+      <UserMenu  userMenu={usermenu} setUserMenu={setUsermenu} />
       <Routes>
-         <Route path='/' element={<Home moneyInfo={moneyInfo} />} />
+         <Route path='/' element={<Home moneyInfo={moneyInfo}/>} />
        <Route path='/product' element={<Product />} />
         <Route path='/transaction' element={<Transaction />} />
         <Route path='/compliance' element={<Compliance />} />

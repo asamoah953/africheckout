@@ -1,0 +1,43 @@
+.user-menu {
+    position: absolute;
+    right: 0;
+    width: 12rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.menu-item1 {
+  
+    background-color:#ffffff; 
+    border-radius: 4px; 
+    cursor: pointer;
+    
+}
+.menu-item2 {
+  
+    background-color:#ffffff; 
+    border-radius: 4px; 
+    cursor: pointer;
+    
+}
+
+
+.usericon {
+    font-size: 21px;
+    position: relative;
+    margin-right: 1rem;
+    
+}
+.logouticon {
+    font-size: 21px;
+    position: relative;
+    margin-right: 1rem;
+}
+

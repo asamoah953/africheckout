@@ -5,7 +5,7 @@ import './../../CSS/header.css'
 
 
 
-function Header({clicked,setClick}) {
+function Header({clicked,setClick,setUserMenu}) {
        
     
 
@@ -39,7 +39,7 @@ function Header({clicked,setClick}) {
             }
            
 
-                <div className="profile">
+                <div className="profile" onClick={()=>setUserMenu(prev => !prev)}>
                     <h3 className="profile-firstletter">A</h3>
                 </div>
 

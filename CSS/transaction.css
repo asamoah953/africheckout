@@ -42,6 +42,27 @@
   font-size: 1.5rem;
   color: #555;
   margin-top: 1rem;
+  background-color: white;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .transact {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .container {
+    padding: 2rem 2rem;
+  }
+
+  .no-transaction {
+    font-size: 2.5rem;
+  }
+  .no-transactions {
+    font-size: 1.4rem;
+    background-color: white;
+  }
+
 }
 
 @media (max-width: 480px) {

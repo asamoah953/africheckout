@@ -119,9 +119,11 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 834px) {
+@media  (max-width: 768px) {
   .dashboard-home {
     padding: 1rem;
+    margin-top: 5rem;
+    height: 99vh;
   }
 
  .dashboardText {
@@ -135,9 +137,9 @@
 
 
   .dashboard-div {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr 1fr ));
     gap: 1rem;
-    margin-top: -66rem;
+    margin-top: 3rem;
   }
 
   .payout {
@@ -170,6 +172,74 @@
     padding: 0;
     border-radius: 0 0 0.75rem 0.75rem;
   }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+.dashboardText {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.dashboard-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.money-info {
+  background-color: #FFFFFF;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.txt {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.money-info h3 {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.earning {
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.2rem;
+    background-color: #FFFFFF;
+
+}
+
+.charts {
+  width: 100%;
+  border-radius: 0 0 1rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Responsive Chart Canvas */
+.charts canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+  
 }
 
 

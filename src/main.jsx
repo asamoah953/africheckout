@@ -12,6 +12,7 @@ import '../CSS/payout.css'
 import '../CSS/newproduct.css'
 import '../CSS/newPayoutAccount.css'
 import '../CSS/payoutRequest.css'
+import '../CSS/usermenu.css'
 import App from './App.jsx'
 import {BrowserRouter} from 'react-router-dom'
 

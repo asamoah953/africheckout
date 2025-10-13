@@ -209,6 +209,36 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .production-container {
+    padding: 2rem 3rem;
+  }
+
+  .p-button h2 {
+    font-size: 2rem;
+  }
+  .p-button  {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .button {
+    min-width: 11rem;
+  }
+
+  .no-pay{
+    background-color: white;
+  }
+
+  .popup-box {
+    max-width: 500px;
+    padding: 2.5rem 3rem;
+  }
+
+  .popup-header h3 {
+    font-size: 2rem;
+  }
+}
 
 @media (max-width: 480px) {
   
@@ -227,6 +257,40 @@
 
   .button{
     font-size: .7rem;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .production-container {
+    padding: 2rem 2.5rem;
+  }
+
+  .p-button h2 {
+    font-size: 2rem;
+  }
+
+  .p-button  {
+    width: 43rem;
+    justify-content: space-between;
+  }
+
+  .button {
+    font-size: 1.1rem;
+    min-width: 10rem;
+  }
+
+  .popup-box {
+    max-width: 450px;
+    padding: 2rem 2.5rem;
+  }
+
+  .popup-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .no-pay{
+    background-color: white;
   }
 }
 
