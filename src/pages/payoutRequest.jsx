@@ -48,7 +48,7 @@ function PayoutRequest({ showPopup, setShowPopup }) {
             </div>
 
             <div className="production-list">
-                <BiX  />
+                <BiX />
                 <h3 className="no-pay">No Payout Account</h3>
             </div>
 

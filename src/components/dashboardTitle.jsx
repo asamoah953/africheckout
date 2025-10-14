@@ -1,5 +1,5 @@
 function DashBoardTitle() {
-    return(
+    return (
         <h2>
             Dashboard
         </h2>

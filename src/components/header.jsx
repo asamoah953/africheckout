@@ -5,43 +5,43 @@ import './../../CSS/header.css'
 
 
 
-function Header({clicked,setClick,setUserMenu}) {
-       
-    
+function Header({ clicked, setClick, setUserMenu }) {
+
+
 
 
     return (
         <header className="header-container">
-           
-            <div className= { !clicked ? 'logo-container shrink' : 'logo-container'} >
-               
-               {
 
-                clicked && <img alt="Africheckout logo" src="https://africheckout.com/images/logo.png" className="logo"></img>
-                
+            <div className={!clicked ? 'logo-container shrink' : 'logo-container'} >
 
-               }
-               {
+                {
 
-                clicked ? <GoChevronLeft className="left-arrow" onClick={()=>setClick(prev => !prev)}/> 
-                : <FiChevronRight className="right-arrow" onClick={()=>setClick(prev => !prev)}/>
+                    clicked && <img alt="Africheckout logo" src="https://africheckout.com/images/logo.png" className="logo"></img>
 
 
-                
+                }
+                {
 
-               }
-              
-                
+                    clicked ? <GoChevronLeft className="left-arrow" onClick={() => setClick(prev => !prev)} />
+                        : <FiChevronRight className="right-arrow" onClick={() => setClick(prev => !prev)} />
+
+
+
+
+                }
+
+
             </div>
             {
                 !clicked &&
-                 <FiMenu className="menu-icon" onClick={()=>setClick(prev =>!prev)}/>
+                <FiMenu className="menu-icon" onClick={() => setClick(prev => !prev)} />
             }
-           
 
-                <div className="profile" onClick={()=>setUserMenu(prev => !prev)}>
-                    <h3 className="profile-firstletter">A</h3>
-                </div>
+
+            <div className="profile" onClick={() => setUserMenu(prev => !prev)}>
+                <h3 className="profile-firstletter">A</h3>
+            </div>
 
         </header>
     )

@@ -7,7 +7,7 @@ function UserMenu({ userMenu }) {
   return (
     <>
       {userMenu && (
-        <div className="user-menu">
+        <div className="user-menu" >
           <div className="menu-item1">
             <FaUserCircle className="usericon" />
             <Link to='/settings' className="p-link">Profile</Link>

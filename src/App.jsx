@@ -16,8 +16,8 @@ import { useState } from 'react';
 
 function App() {
   const [clicked, setClick] = useState(true);
-   const [showPopup, setShowPopup] = useState(false);
-   const [usermenu,setUsermenu]=useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const [usermenu, setUsermenu] = useState(false);
 
 
   const moneyInfo = [
@@ -36,17 +36,17 @@ function App() {
 
       <Header clicked={clicked} setClick={setClick} setUserMenu={setUsermenu} />
       <DashBoard dashBoard={clicked} setDashBoard={setClick} />
-      <UserMenu  userMenu={usermenu} setUserMenu={setUsermenu} />
+      <UserMenu userMenu={usermenu} setUserMenu={setUsermenu} />
       <Routes>
-         <Route path='/' element={<Home moneyInfo={moneyInfo}/>} />
-       <Route path='/product' element={<Product />} />
+        <Route path='/' element={<Home moneyInfo={moneyInfo} />} />
+        <Route path='/product' element={<Product />} />
         <Route path='/transaction' element={<Transaction />} />
         <Route path='/compliance' element={<Compliance />} />
         <Route path='/settings' element={<Settings />} />
-        <Route path='/payout' element={<PayOut   />} />
-        <Route path='/request' element={<PayoutRequest showPopup={showPopup}setShowPopup={setShowPopup} />} />
+        <Route path='/payout' element={<PayOut />} />
+        <Route path='/request' element={<PayoutRequest showPopup={showPopup} setShowPopup={setShowPopup} />} />
         <Route path='/newproduct' element={<NewProduct />} />
-        <Route path='/newpayoutaccount' element={<NewPayOutAccount  />} />
+        <Route path='/newpayoutaccount' element={<NewPayOutAccount />} />
       </Routes>
 
 

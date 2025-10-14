@@ -70,11 +70,12 @@
 
 
 @media (min-width: 1025px) {
-   .product-button h2 {
+  .product-button h2 {
     font-size: 2rem;
     color: red;
   }
-  .product-button  {
+
+  .product-button {
     font-size: 2rem;
     width: 100%;
     justify-content: space-between;
@@ -84,7 +85,7 @@
     font-size: 1rem;
   }
 
-  .list{
+  .list {
     margin-left: -12rem;
     position: relative;
   }
@@ -106,7 +107,8 @@
     font-size: 2rem;
     color: red;
   }
-  .product-button  {
+
+  .product-button {
     font-size: 2rem;
     width: 100%;
     justify-content: space-between;
@@ -116,7 +118,7 @@
     font-size: 1rem;
   }
 
-  .list{
+  .list {
     margin-left: -12rem;
     position: relative;
   }
@@ -215,8 +217,8 @@
   }
 
   .empty-icon {
-  margin-top: -1rem;
-  background-color: white;
+    margin-top: -1rem;
+    background-color: white;
   }
 
   .product-button {
@@ -251,211 +253,3 @@
     font-size: 1.8rem;
   }
 }
-
-/* .production-container {
-    width: 70%;
-    display: inline-block;
-    position: absolute;
-    margin: 5rem;
-    margin-left: 20rem;
-    margin-top: -55rem;
-}
-
-.producton-header {
-    width: 70%;
-    height: 2rem;
-    font-size: small;
-    color: gray;
-}
-
-.product-button {
-    width: 75rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-}
-
-.button {
-    width: 7.5rem;
-    height: 2.5rem;
-    margin-top: 0.7rem;
-    border-radius: 12px;
-    cursor: pointer;
-    background-color: #F59E0B;
-    color: white;
-    font-weight: 500;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button:hover {
-    background-color: #d97706;
-    transform: translateY(-2px);
-}
-
-
-.production-list {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 90%;
-    height: 12rem;
-    margin-top: 4rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    margin-top: 5rem;
-}
-
-.prod {
-    margin-top: 0.2rem;
-    background-color: white;
-    background-color:'white'
-    }
-
-
-.list {
-    display: inline-block;
-    margin-right: 0.5rem;
-}
-
-.list1 {
-    display: inline-block;
-    margin-right: 0.5rem;
-}
-
-@media(max-width: 425px) {
-    .production-container {
-        width: 90%;
-        margin: 1rem;
-        position: static;
-    }
-
-    .producton-header {
-        width: 100%;
-        font-size: 0.9rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 90%;
-    }
-
-    .product-button {
-        width: 110%;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .button {
-        width: 100%;
-        max-width: 200px;
-        height: 2.1rem;
-        font-size: .7rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-
-    .production-list {
-        width: 100%;
-        height: auto;
-        padding: 2rem 1rem;
-        margin-top: 7rem;
-    }
-
-    .prod {
-        font-size: .8rem;
-    }
-
-    .list, .list1 {
-        margin-bottom: 0.5rem;
-        display: inline-block;
-    }
-} */
-
-/* ======= Base Styles (Desktop First) ======= */
-
-
-/* @media (min-width: 481px) and (max-width: 768px) {
-  .producton-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .product-button {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .product-button h2 {
-    font-size: 1.8rem;
-  }
-
-  .button {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-
-  .empty-icon{
-    margin-top: -1rem;
-    background-color: white;
-  }
-
-  .prod {
-    font-size: 1.4rem;
-    background-color: white;
-  }
-
-  .production-list svg {
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .product-button h2 {
-    font-size: 2rem;
-    color: red;
-  }
-  .product-button  {
-    font-size: 2rem;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .button {
-    font-size: 1rem;
-  }
-
-  .list{
-    margin-left: -12rem;
-    position: relative;
-  }
-
-  .prod {
-    font-size: 1.5rem;
-    background-color: white;
-    margin-top: 2rem;
-  }
-
-  .production-header {
-    flex-direction: column;
-  }
-}
-
-
-@media (min-width: 1025px) {
-  .producton-header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .product-button {
-    flex-direction: row;
-    align-items: center;
-  }
-} */

@@ -1,4 +1,3 @@
-// components/LineChart.jsx
 import { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
@@ -6,8 +5,8 @@ function LineChart() {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    const xValues = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November','November','December'];
-    const yValues = [0, 0.1,  0.2,  0.3,  0.4,  0.5,  0.6,  0.7,  0.8,  0.9,  1.0];
+    const xValues = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'November', 'December'];
+    const yValues = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0];
 
     const chartInstance = new Chart(chartRef.current, {
       type: 'line',
@@ -35,7 +34,7 @@ function LineChart() {
     });
 
     return () => {
-      chartInstance.destroy(); // cleanup to avoid duplicate charts
+      chartInstance.destroy();
     };
   }, []);
 

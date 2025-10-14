@@ -68,11 +68,11 @@
 }
 
 
-.request{
+.request {
   margin-top: 4x;
-  font-size:2.2rem ;
+  font-size: 2.2rem;
 }
-/* Popup Overlay */
+
 
 .popup-overlay {
   position: fixed;
@@ -95,7 +95,7 @@
   max-width: 400px;
   padding: 1.5rem 2rem;
   box-sizing: border-box;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
@@ -186,7 +186,8 @@
   .p-button h2 {
     font-size: 2.2rem;
   }
-  .p-button  {
+
+  .p-button {
     width: 100%;
     justify-content: space-between;
   }
@@ -195,7 +196,7 @@
     min-width: 11rem;
   }
 
-  .no-pay{
+  .no-pay {
     background-color: white;
   }
 
@@ -217,7 +218,8 @@
   .p-button h2 {
     font-size: 2rem;
   }
-  .p-button  {
+
+  .p-button {
     width: 100%;
     justify-content: space-between;
   }
@@ -226,7 +228,7 @@
     min-width: 11rem;
   }
 
-  .no-pay{
+  .no-pay {
     background-color: white;
   }
 
@@ -241,7 +243,7 @@
 }
 
 @media (max-width: 480px) {
-  
+
   .p-button h2 {
     font-size: 1.3rem;
   }
@@ -250,12 +252,12 @@
     font-size: 1.8rem;
   }
 
-  .p-button  {
+  .p-button {
     width: 100%;
     justify-content: space-between;
   }
 
-  .button{
+  .button {
     font-size: .7rem;
   }
 }
@@ -270,7 +272,7 @@
     font-size: 2rem;
   }
 
-  .p-button  {
+  .p-button {
     width: 43rem;
     justify-content: space-between;
   }
@@ -289,250 +291,7 @@
     font-size: 1.8rem;
   }
 
-  .no-pay{
+  .no-pay {
     background-color: white;
   }
 }
-
-/* .popup-wrapper {
-  text-align: center;
-  margin-top: 4rem;
-  font-family: 'Poppins', sans-serif;
-}
-
-.open-popup-btn {
-  background: #f59e0b;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 0.7rem 1.4rem;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s;
-}
-
-.open-popup-btn:hover {
-  background: #d48806;
-}
-
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.45);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.no-pay {
-   margin-left: 1%;
-    margin-top: .2rem;
-    background-color: white;
-}
-
-
-.popup-box {
-  background: #fff;
-  width: 600px;
-  padding: 2rem 2.5rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
-  position: relative;
-  animation: fadeIn 0.3s ease;
-}
-
-
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.popup-header h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #111;
-}
-
-.close-icon {
-  font-size: 1.3rem;
-  color: #555;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.close-icon:hover {
-  color: #000;
-}
-
-
-.popup-form {
-  text-align: left;
-}
-
-.popup-label {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #333;
-  display: block;
-  margin-bottom: 0.4rem;
-}
-
-.required {
-  color: red;
-  margin-left: 2px;
-}
-
-.popup-select {
-  width: 100%;
-  padding: 0.9rem 1rem;
-  border: 1px solid #e48a00;
-  border-radius: 6px;
-  font-size: 1rem;
-  outline: none;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
-
-.popup-select:focus {
-  border-color: #c77700;
-  box-shadow: 0 0 5px rgba(245, 158, 11, 0.3);
-}
-
-.popup-buttons {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: 1.5rem;
-}
-
-.btn {
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.7rem 1.4rem;
-  border-radius: 6px;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.btn.create {
-  background: #f59e0b;
-  color: white;
-}
-
-.btn.create:hover {
-  background: #d48806;
-}
-
-.btn.cancel {
-  border: 1px solid #ccc;
-  background: #fff;
-  color: #333;
-}
-
-.btn.cancel:hover {
-  background: #f5f5f5;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-@media(max-width: 425px) {
-  .p-button{
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  
-} */
-
-
-/* ======= Base Styles (Mobile First) ======= */
-
-
-
-/* ======= Responsive Media Queries ======= */
-/* 
-@media (min-width: 481px) and (max-width: 768px) {
-  .production-container {
-    padding: 2rem 2.5rem;
-  }
-
-  .p-button h2 {
-    font-size: 2rem;
-  }
-
-  .p-button  {
-    width: 43rem;
-    justify-content: space-between;
-  }
-
-  .button {
-    font-size: 1.1rem;
-    min-width: 10rem;
-  }
-
-  .popup-box {
-    max-width: 450px;
-    padding: 2rem 2.5rem;
-  }
-
-  .popup-header h3 {
-    font-size: 1.8rem;
-  }
-
-  .no-pay{
-    background-color: white;
-  }
-} */
-
-/* Small laptops 769px - 1024px 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .production-container {
-    padding: 2rem 3rem;
-  }
-
-  .p-button h2 {
-    font-size: 2.2rem;
-  }
-  .p-button  {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .button {
-    min-width: 11rem;
-  }
-
-  .no-pay{
-    background-color: white;
-  }
-
-  .popup-box {
-    max-width: 500px;
-    padding: 2.5rem 3rem;
-  }
-
-  .popup-header h3 {
-    font-size: 2rem;
-  }
-
-  
-}
-
-
-/* Desktops > 1024px

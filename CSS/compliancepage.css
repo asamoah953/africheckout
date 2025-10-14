@@ -7,7 +7,7 @@
   background-color: #f9f9f9;
 }
 
-.main-compliance-container > h3 {
+.main-compliance-container>h3 {
   position: absolute;
   top: 1rem;
   left: 3rem;
@@ -21,7 +21,7 @@
   background-color: #fff;
   padding: 2rem 3rem;
   border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
@@ -29,14 +29,14 @@
 }
 
 /* Section titles */
-.compliance-page > div h3 {
+.compliance-page>div h3 {
   margin-bottom: 0.6rem;
   font-weight: 600;
   color: #333;
 }
 
 /* Subtitles in gray */
-.compliance-page > div h3[style*="color:gray"] {
+.compliance-page>div h3[style*="color:gray"] {
   font-weight: 400;
   font-size: 0.9rem;
   margin-top: 0;
@@ -77,7 +77,7 @@
     padding: 1rem 1.5rem 2rem;
   }
 
-  .main-compliance-container > h3 {
+  .main-compliance-container>h3 {
     position: relative;
     top: auto;
     left: auto;
@@ -97,7 +97,7 @@
     margin-top: 0;
   }
 
-  .compliance-page > div { 
+  .compliance-page>div {
     margin-bottom: 2rem;
   }
 
@@ -116,7 +116,7 @@
     padding: 2rem 4rem 3rem;
   }
 
-  .main-compliance-container > h3 {
+  .main-compliance-container>h3 {
     font-size: 2.3rem;
   }
 
@@ -126,168 +126,3 @@
     padding: 2rem 4rem;
   }
 }
-
-/* .main-compliance-container {
-    width: 65%;
-    min-height: 100vh;
-    margin: 30px auto;
-    background-color: #f9f9f9;
-    padding: 2rem;
-    position: relative;
-     margin-top: -55rem;
-}
-
-
-.main-compliance-container > h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-
-.compliance-page {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-
-.compliance-page > div {
-    background-color: white;
-    padding: 1rem 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-
-.compliance-page h3 {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-    background-color: white;
-}
-
-
-.compliance-page input[type="text"],
-.compliance-page input[type="date"] {
-    width: 100%;
-    padding: 0.6rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-.compliance-page button {
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    transition: background-color 0.3s ease;
-}
-
-.compliance-page button:hover {
-    background-color: #0056b3;
-}
-
-
-@media (max-width: 425px) {
-    .main-compliance-container {
-        width: 95%;
-        margin: 1rem auto;
-        padding: 1rem;
-        margin-top: 2rem; /* Override negative margin 
-    }
-
-    .main-compliance-container > h3 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
-    .compliance-page {
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
-    }
-
-    .compliance-page > div {
-        padding: 1rem;
-    }
-
-    .compliance-page h3 {
-        font-size: 0.95rem;
-    }
-
-    .compliance-page input[type="text"],
-    .compliance-page input[type="date"] {
-        font-size: 0.95rem;
-        padding: 0.5rem;
-    }
-
-    .compliance-page button {
-        width: 100%;
-        font-size: 1rem;
-    }
-} */
-
-/* ======= Base Styles (Desktop First) ======= */
-
-/* 
-@media (min-width: 481px) and (max-width: 768px) {
-  .main-compliance-container {
-    padding: 1.5rem 2rem 2.5rem;
-  }
-
-  .main-compliance-container > h3 {
-    position: relative;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    left: auto;
-    top: auto;
-  }
-
-  .compliance-page {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 1.5rem 2rem;
-    margin-top: 0;
-  }
-
-  .compliance-page > div {
-    margin-bottom: 1.5rem;
-  }
-
-  .compliance-page button {
-    width: auto;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .main-compliance-container {
-    padding: 2rem 3rem 3rem;
-  }
-
-  .main-compliance-container > h3 {
-    font-size: 2.2rem;
-    text-align: left;
-    position: absolute;
-    left: 3rem;
-    top: 1rem;
-    margin-bottom: 0;
-  }
-
-  .compliance-page {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    padding: 2rem 3rem;
-  }
-}
- */
-

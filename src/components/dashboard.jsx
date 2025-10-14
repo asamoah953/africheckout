@@ -9,13 +9,12 @@ import './../../CSS/dashboard.css';
 import { IoIosArrowDown } from "react-icons/io";
 import { IoChevronUpOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-import { BiX } from "react-icons/bi";
 import { useState } from "react";
 
 function DashBoard({ dashBoard, setDashBoard }) {
 
-    const [account, setAccount] = useState(true);
-    const [payout, setPayout] = useState(true)
+  const [account, setAccount] = useState(true);
+  const [payout, setPayout] = useState(true)
 
 
 
@@ -27,12 +26,12 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
 
 
-  
-     return (
+
+  return (
     <div className={!dashBoard ? 'dashboard-wrapper vanish' : 'dashboard-wrapper'}>
       <div className={!dashBoard ? 'dashboard-container shrink' : 'dashboard-container'}>
-        
-         {dashBoard && (
+
+        {dashBoard && (
           <div className="logo-wrapper">
             <img
               alt="Africheckout logo"
@@ -40,7 +39,7 @@ function DashBoard({ dashBoard, setDashBoard }) {
               className="sidebar-logo"
             />
           </div>
-        )} 
+        )}
 
         {/* Main Links */}
         <Link to='/' className="nav-link" onClick={() => setDashBoard(false)}>
@@ -50,21 +49,20 @@ function DashBoard({ dashBoard, setDashBoard }) {
           </div>
         </Link>
 
-        <Link to='/product' className="nav-link"  onClick={() => setDashBoard(false)}>
+        <Link to='/product' className="nav-link" onClick={() => setDashBoard(false)}>
           <div className="nav-item">
             <TfiMenuAlt className="nav-icon" />
             {dashBoard && <span className="nav-text">Products</span>}
           </div>
         </Link>
 
-        <Link to='/transaction' className="nav-link"  onClick={() => setDashBoard(false)}>
+        <Link to='/transaction' className="nav-link" onClick={() => setDashBoard(false)}>
           <div className="nav-item">
             <AiOutlineDollarCircle className="nav-icon" />
             {dashBoard && <span className="nav-text">Transactions</span>}
           </div>
         </Link>
 
-        {/* Accounts Section */}
         {dashBoard && (
           <div className="section-header">
             <span>Accounts</span>
@@ -78,14 +76,14 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
         {!account && (
           <>
-            <Link to='/compliance' className="nav-link"  onClick={() => setDashBoard(false)}>
+            <Link to='/compliance' className="nav-link" onClick={() => setDashBoard(false)}>
               <div className="nav-item">
                 <LuFileText className="nav-icon" />
                 {dashBoard && <span className="nav-text">Compliance</span>}
               </div>
             </Link>
 
-            <Link to='/settings' className="nav-link"  onClick={() => setDashBoard(false)}>
+            <Link to='/settings' className="nav-link" onClick={() => setDashBoard(false)}>
               <div className="nav-item">
                 <BsTools className="nav-icon" />
                 {dashBoard && <span className="nav-text">Settings</span>}
@@ -94,7 +92,6 @@ function DashBoard({ dashBoard, setDashBoard }) {
           </>
         )}
 
-        {/* Payouts Section */}
         {dashBoard && (
           <div className="section-header">
             <span>Payouts</span>
@@ -108,14 +105,14 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
         {!payout && (
           <>
-            <Link to='/payout' className="nav-link"  onClick={() => setDashBoard(false)}>
+            <Link to='/payout' className="nav-link" onClick={() => setDashBoard(false)}>
               <div className="nav-item">
                 <MdOutlinePayment className="nav-icon" />
                 {dashBoard && <span className="nav-text">Payout Accounts</span>}
               </div>
             </Link>
 
-            <Link to='/request' className="nav-link"  onClick={() => setDashBoard(false)}>
+            <Link to='/request' className="nav-link" onClick={() => setDashBoard(false)}>
               <div className="nav-item">
                 <IoMdSend className="nav-icon" />
                 {dashBoard && <span className="nav-text">Payout Request</span>}

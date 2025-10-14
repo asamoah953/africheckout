@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 
 
 function SearchBar({ onSearch }) {
@@ -6,7 +6,7 @@ function SearchBar({ onSearch }) {
 
   const handleSearch = () => {
     if (onSearch) onSearch(query);
-    console.log('Search query:', query); 
+    console.log('Search query:', query);
   };
 
   return (

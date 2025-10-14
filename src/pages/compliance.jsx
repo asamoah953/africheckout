@@ -1,11 +1,11 @@
-function Compliance(){
-    return(
+function Compliance() {
+    return (
         <div className="main-compliance-container">
-            <h3 className="compliance-title" style={{position:'absolute', fontSize:'2.3rem'}}>Compliance</h3>
+            <h3 className="compliance-title" style={{ position: 'absolute', fontSize: '2.3rem' }}>Compliance</h3>
             <div className="compliance-page">
                 <div>
                     <h3 >Brand Details</h3>
-                    <h3 style={{color:'gray', fontSize:'.9rem'}}>Brand Information</h3>
+                    <h3 style={{ color: 'gray', fontSize: '.9rem' }}>Brand Information</h3>
                 </div>
 
                 <div>
@@ -36,7 +36,7 @@ function Compliance(){
 
                 <div>
                     <h3>Ownership</h3>
-                    <h3 style={{color:'gray', fontSize:'.9rem'}}>Business Owner Information</h3>
+                    <h3 style={{ color: 'gray', fontSize: '.9rem' }}>Business Owner Information</h3>
                 </div>
 
                 <div>
@@ -61,8 +61,8 @@ function Compliance(){
                     <button>Save Changes</button>
                 </div>
 
-               
-               
+
+
             </div>
 
         </div>
