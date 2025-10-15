@@ -11,7 +11,7 @@ function Product() {
             </div>
 
             <div className="production-list">
-                <BiX className="empty-icon" />
+                <BiX className="empty-icon" style={{color:"red"}} />
                 <h3 className="prod" >No Product</h3>
             </div>
 

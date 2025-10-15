@@ -33,15 +33,15 @@
 .left-arrow {
   display: block;
   margin-left: 9rem;
-  background-color: #ffffff;
-  ;
+  background-color: rgb(15, 9, 37);
+  color: hsl(0, 0%, 100%);
 }
 
 .right-arrow {
   display: block;
   margin-left: 1rem;
-  background-color: #ffffff;
-  ;
+  background-color: rgb(15, 9, 37);
+  color: hsl(0, 0%, 100%)
 }
 
 
@@ -51,7 +51,7 @@
 }
 
 .profile {
-  background-color: #333;
+  background-color: white;
   color: white;
   border-radius: 50%;
   width: 40px;
@@ -105,6 +105,8 @@
     display: block;
     font-size: 1.3rem;
     margin-left: -20rem;
+    color: hsl(0, 0%, 100%);
+
 
   }
 

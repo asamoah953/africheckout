@@ -1,4 +1,4 @@
-.transaction-page {
+/* .transaction-page {
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
@@ -43,7 +43,108 @@
   color: #555;
   margin-top: 1rem;
   background-color: white;
+} */
+
+.transaction-page {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0b0f29, #070a1d 60%);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
+
+.transact {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(80, 97, 255, 0.4);
+}
+
+/* Container box for transactions */
+.container {
+  background: linear-gradient(145deg, #0f1642, #1a1f4d);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(80, 90, 255, 0.3);
+  box-shadow:
+    0 0 10px rgba(80, 115, 255, 0.15),
+    0 0 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  animation: glowPulse 3s infinite ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 20px rgba(80, 115, 255, 0.3),
+    0 0 40px rgba(80, 115, 255, 0.2);
+}
+
+/* Searchbar area */
+.searchbar {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.searchbar input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 0 8px rgba(80, 115, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.searchbar input:focus {
+  box-shadow: 0 0 20px rgba(80, 115, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Divider line */
+.transaction-hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(80, 115, 255, 0.5), transparent);
+  margin: 1rem 0 2rem 0;
+}
+
+/* No transaction messages */
+.no-transaction {
+  font-size: 2.5rem;
+  color: rgba(180, 185, 255, 0.5);
+  text-shadow: 0 0 10px rgba(80, 97, 255, 0.3);
+}
+
+.no-transactions {
+  font-size: 1.5rem;
+  color: #cfd3ff;
+  margin-top: 1rem;
+  background: transparent;
+  text-shadow: 0 0 10px rgba(80, 97, 255, 0.2);
+}
+
+/* Glowing animation (same theme pulse) */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(80, 115, 255, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(80, 115, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(80, 115, 255, 0.15);
+  }
+}
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .transact {
@@ -61,7 +162,7 @@
 
   .no-transactions {
     font-size: 1.4rem;
-    background-color: white;
+    /* background-color: white; */
   }
 
 }
@@ -90,13 +191,13 @@
 
   .no-transaction {
     font-size: 2rem;
-    background-color: white;
+    /* background-color: white; */
 
   }
 
   .no-transactions {
     font-size: 1.2rem;
-    background-color: white;
+    /* background-color: white; */
   }
 }
 
@@ -116,7 +217,7 @@
 
   .no-transactions {
     font-size: 1.3rem;
-    background-color: white;
+    /* background-color: white; */
 
   }
 }

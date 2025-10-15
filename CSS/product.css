@@ -1,4 +1,4 @@
-.production-container {
+/* .production-container {
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
@@ -65,14 +65,125 @@
   margin-top: 1rem;
   font-size: 1.5rem;
   color: #666;
+} */
+
+.production-container {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0b0f29, #070a1d 60%);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Header layout */
+.producton-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  background: linear-gradient(145deg, #0f1642, #1a1f4d);
+  border: 1px solid rgba(80, 90, 255, 0.3);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  box-shadow:
+    0 0 15px rgba(80, 115, 255, 0.15),
+    0 0 30px rgba(0, 0, 0, 0.5);
+  animation: glowPulse 3s infinite ease-in-out;
+}
+
+/* Text inside header */
+.list1,
+.list {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #cfd3ff;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-shadow: 0 0 10px rgba(80, 97, 255, 0.4);
+}
+
+/* Product buttons and title */
+.product-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #0f1642, #1a1f4d);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(80, 90, 255, 0.3);
+  box-shadow:
+    0 0 10px rgba(90, 115, 255, 0.15),
+    0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.product-button:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 20px rgba(80, 115, 255, 0.4),
+    0 0 40px rgba(80, 115, 255, 0.2);
+}
+
+.product-button h2 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(80, 97, 255, 0.5);
+}
+
+/* Buttons */
+.button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4b63ff, #6c8cff);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(80, 115, 255, 0.3);
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #6c8cff, #8fa7ff);
+  box-shadow: 0 0 30px rgba(80, 115, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.prod {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: red;
+} 
+
+
+/* Glow animation reused globally */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(80, 115, 255, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(80, 115, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(80, 115, 255, 0.15);
+  }
+}
 
 
 @media (min-width: 1025px) {
   .product-button h2 {
     font-size: 2rem;
-    color: red;
+    color: yellow;
   }
 
   .product-button {
