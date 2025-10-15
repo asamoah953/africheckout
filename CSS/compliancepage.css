@@ -227,6 +227,13 @@
   .compliance-page button {
     width: 100%;
   }
+
+  .no-transactions {
+    color: red;
+  }
+  .no-transaction {
+    color: red;
+  }
 }
 
 @media (min-width: 1025px) {
