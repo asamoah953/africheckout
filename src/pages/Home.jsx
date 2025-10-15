@@ -17,8 +17,8 @@ function Home({ moneyInfo }) {
 
                                 <div className='money-info' key={info.key}>
                                     <CiCircleCheck className='icon' />
-                                    <h3 className='txt' style={{ position: "relative", bottom: '5px', display: 'inline-block', backgroundColor: '#FFFFFF', marginTop: '7px', fontSize: '18px', marginLeft: '8px' }}>{info.info}</h3>
-                                    <h3 style={{ backgroundColor: '#FFFFFF', marginTop: '4px', fontSize: '2rem' }}>{info.amount}</h3>
+                                    <h3 className='txt' style={{   marginTop: '7px', fontSize: '18px', marginLeft: '8px' }}>{info.info}</h3>
+                                    <h3 style={{ marginTop: '4px', fontSize: '2rem' }}>{info.amount}</h3>
                                 </div>
 
                             </div>

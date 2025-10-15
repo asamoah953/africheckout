@@ -2,12 +2,14 @@
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
+  background-color: rgb(43, 43, 77);
 }
 
 .dashboardText {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: left;
+  color: white;
 }
 
 .dashboard-div {
@@ -17,27 +19,53 @@
   margin-bottom: 2rem;
 }
 
-.payout {
+/* .payout {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 14px;
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* background-color: #FFFFFF; 
+  background-color: hsla(236, 82%, 7%, 0.842);
+  box-shadow: 0 1px 3px rgba(150, 58, 58, 0.1);
   padding: 1.5rem 1rem;
+} */
+
+.payout {
+  border: 1px solid rgba(150, 58, 58, 0.5);
+  /* Light red border */
+  border-radius: 14px;
+  background-color: hsla(236, 86%, 14%, 0.842);
+  padding: 1.5rem 1rem;
+  position: relative;
+  box-shadow:
+    0 0 10px rgba(172, 170, 170, 0.301),
+    0 0 20px rgba(31, 21, 51, 0.521),
+    0 0 30px #0d0e33b6;
+  animation: glowPulse 3s infinite ease-in-out;
 }
 
+
 .money-info {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  background-color: rgb(11, 12, 73);
+  color: #ffffff;
 }
 
 .icon {
-  font-size: 1.5rem;
+  background-color: rgb(11, 12, 73);
+  color: #ffffff;
 }
 
+
 .txt {
+  position: relative;
+  bottom: 5px;
+  background-color: rgb(11, 12, 73);
+  margin-top: 7px;
+  font-size: 18px;
+  margin-left: 8px;
   display: inline-block;
   margin-left: 0.5rem;
-  font-size: 1rem;
   vertical-align: middle;
+  color: white;
 }
 
 .money-info h3 {
@@ -46,7 +74,8 @@
 }
 
 .earning {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  background-color:rgb(48, 13, 51); 
   border-radius: 10px 10px 0 0;
   padding: 1rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -55,14 +84,15 @@
 
 .text {
   font-size: 1.2rem;
-  background-color: #FFFFFF;
+  background-color:rgb(89, 17, 95);
+  color: white;
 
 }
 
 .charts {
   width: 100%;
   border-radius: 0 0 1rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -70,12 +100,17 @@
 .charts canvas {
   width: 100% !important;
   height: auto !important;
+  
 }
 
 
 
 
 @media (max-width: 480px) {
+
+  *{
+    background-color: rgb(43, 43, 77);
+  }
   .dashboard-home {
     padding: 1rem;
   }

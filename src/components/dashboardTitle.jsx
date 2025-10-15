@@ -1,6 +1,6 @@
 function DashBoardTitle() {
     return (
-        <h2>
+        <h2 style={{ color:"white"}}>
             Dashboard
         </h2>
     )

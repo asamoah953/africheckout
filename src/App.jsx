@@ -11,6 +11,11 @@ import PayoutRequest from './pages/payoutRequest';
 import NewProduct from './pages/newProduct';
 import NewPayOutAccount from './pages/newPayoutAccount';
 import UserMenu from './components/userMenu';
+import { CiCircleCheck } from "react-icons/ci";
+import { RiPassPendingFill } from "react-icons/ri";
+import { BiDirections } from "react-icons/bi";
+import { TbSum } from "react-icons/tb";
+import { LuWallet } from "react-icons/lu";
 import { useState } from 'react';
 
 
@@ -19,16 +24,15 @@ function App() {
   const [showPopup, setShowPopup] = useState(false);
   const [usermenu, setUsermenu] = useState(false);
 
-
   const moneyInfo = [
-    { key: 1, info: 'Available Payout', amount: '$0.00' },
-    { key: 2, info: 'Pending Payout', amount: '$0.00' },
-    { key: 3, info: 'Total Revenue', amount: '$0.00' },
-    { key: 4, info: 'Chargebacks', amount: '0' },
-    { key: 5, info: 'Todays revenue', amount: '$0.00' },
-    { key: 6, info: 'This weeks revenue', amount: '$0.00' },
-    { key: 7, info: 'This months revenue', amount: '$0.00' },
-    { key: 8, info: 'Total Amont Settled', amount: '$0.00' }
+    { key: 1, info: 'Available Payout', amount: '$0.00', icon: <CiCircleCheck className='icon'/> },
+    { key: 2, info: 'Pending Payout', amount: '$0.00', icon: <RiPassPendingFill className='icon'/> },
+    { key: 3, info: 'Total Revenue', amount: '$0.00', icon: <TbSum className='icon'/> },
+    { key: 4, info: 'Chargebacks', amount: '0', icon: <BiDirections className='icon'/> },
+    { key: 5, info: "Today's revenue", amount: '$0.00', icon: <TbSum className='icon'/> },
+    { key: 6, info: "This week's revenue", amount: '$0.00', icon: <TbSum className='icon'/> },
+    { key: 7, info: 'This months revenue', amount: '$0.00', icon: <CiCircleCheck className='icon'/> },
+    { key: 8, info: 'Total Amount Settled', amount: '$0.00', icon: <LuWallet className='icon'/> },
   ]
 
   return (
