@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: rgb(15, 9, 37);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -26,7 +27,7 @@
   display: block;
   height: 33px;
   width: 9rem;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .left-arrow {
