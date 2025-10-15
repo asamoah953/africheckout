@@ -8,7 +8,7 @@ function Home({ moneyInfo }) {
     return (
         <>
             <div className="dashboard-home" >
-                <h3 className='dashboardText' >Dashboard</h3>
+                <h3 className='dashboardText' style={{color:'white'}} >Dashboard</h3>
 
                 <div className="dashboard-div">
                     {

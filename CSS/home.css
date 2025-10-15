@@ -117,8 +117,8 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  color: #ffffff;
   text-shadow: 0 0 15px rgba(80, 97, 255, 0.4);
+  background-color:  rgb(11, 12, 73);;
 }
 
 /* Grid layout for info cards */
@@ -225,7 +225,7 @@
 @media (max-width: 480px) {
 
   *{
-    background-color: rgb(11, 12, 73);;
+    background-color: rgb(11, 12, 73);
   }
   .dashboard-home {
     padding: 1rem;

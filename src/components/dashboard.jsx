@@ -16,17 +16,6 @@ function DashBoard({ dashBoard, setDashBoard }) {
   const [account, setAccount] = useState(true);
   const [payout, setPayout] = useState(true)
 
-
-
-
-
-
-
-
-
-
-
-
   return (
     <div className={!dashBoard ? 'dashboard-wrapper vanish' : 'dashboard-wrapper'}>
       <div className={!dashBoard ? 'dashboard-container shrink' : 'dashboard-container'}>
@@ -65,7 +54,7 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
         {dashBoard && (
           <div className="section-header">
-            <span>Accounts</span>
+            <span className="accountandpauout">Accounts</span>
             {account ? (
               <IoIosArrowDown className="toggle-icon" onClick={() => setAccount(prev => !prev)} />
             ) : (
@@ -94,7 +83,7 @@ function DashBoard({ dashBoard, setDashBoard }) {
 
         {dashBoard && (
           <div className="section-header">
-            <span>Payouts</span>
+            <span className="accountandpauout">Payouts</span>
             {payout ? (
               <IoIosArrowDown className="toggle-icon" onClick={() => setPayout(prev => !prev)} />
             ) : (

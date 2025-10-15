@@ -6,6 +6,7 @@
 
 .newPayoutAccount-header {
   margin-bottom: 1.5rem;
+  color: white;
 }
 
 .payout-breadcrumb {
@@ -31,6 +32,8 @@
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: 0.95rem;
+  /* color: white; */
+  color: black;
 }
 
 .required {
@@ -45,6 +48,9 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: black;
 }
 
 .button-group {

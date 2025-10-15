@@ -20,12 +20,13 @@
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  
 }
 
 .p-button h2 {
   margin: 0;
   font-size: 1.8rem;
-  color: black;
+  color: white;
 }
 
 .button {
@@ -38,6 +39,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   min-width: 9rem;
+  margin-right: 1.5rem;
 }
 
 .button:hover {
@@ -69,7 +71,7 @@
 
 
 .request {
-  margin-top: 4x;
+  margin-top: 4px;
   font-size: 2.2rem;
 }
 
@@ -131,6 +133,7 @@
 .popup-label {
   font-weight: 600;
   font-size: 1rem;
+  color: #000;
 }
 
 .required {
@@ -208,6 +211,7 @@
   .popup-header h3 {
     font-size: 2rem;
   }
+  
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -237,6 +241,7 @@
     padding: 2.5rem 3rem;
   }
 
+
   .popup-header h3 {
     font-size: 2rem;
   }
@@ -260,7 +265,18 @@
   .button {
     font-size: .7rem;
   }
+
+  
+
+  .no-pay {
+    background-color: white;
+  }
+  .no-p {
+    background-color: white;
+  }
 }
+
+
 
 
 @media (min-width: 481px) and (max-width: 768px) {

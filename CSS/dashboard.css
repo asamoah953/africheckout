@@ -225,23 +225,46 @@
   .logo-wrapper {
     height: 4rem;
     width: 9rem;
+    background-color: #FAFAFA;
   }
+
+  .sidebar-logo{
+     background-color: #FAFAFA;
+  }
+
 
   .section-header {
     width: 100%;
     padding: 0 15px;
+    background-color: #FAFAFA;
   }
 
   .nav-item {
     padding: 10px 15px;
     gap: 8px;
+    background-color: #FAFAFA;
+
   }
 
   .nav-text {
     font-size: 13px;
+    color: black;
+    background-color: #FAFAFA;
   }
 
   .vanish {
     transform: translateX(-100%);
+  }
+  
+  .nav-icon{
+    background-color: #FAFAFA;
+  }
+
+  .accountandpauout{
+    background-color: #FAFAFA;
+  }
+
+  .toggle-icon{
+     background-color: #FAFAFA;
   }
 }
