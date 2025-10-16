@@ -45,6 +45,7 @@
 .arrowIcon {
   font-size: 1rem;
   color: #666;
+  
 }
 
 .create-product-header {
@@ -124,6 +125,83 @@
 .btn-cancel:hover {
   background-color: #c82333;
 }
+
+
+@media (max-width: 480px) {
+  .arrowIcon {
+  font-size: 1rem;
+  color: #666;
+  background-color: #fafafa;
+}
+  .h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fafafa;
+  margin-bottom: 0.25rem;
+}
+
+ .create-product-container{
+  background-color:  #fafafa;
+ };
+
+ .create-product-form {
+  background-color:  #fafafa;
+ }
+
+ .router{
+  background-color:  #fafafa;
+ }
+
+ .form-group1 {
+  background-color:  #fafafa;  
+  
+ }
+ .form-group{
+  background-color:  #fafafa;
+  
+ }
+
+ .currency-option{
+  background-color:  #fafafa;
+ }
+
+ .product-label{
+  background-color:  #fafafa;
+ }
+
+  .product-input{
+    background-color:  #fafafa;
+  }
+
+  .btn-group{
+    background-color:  #fafafa;
+  }
+
+  .create-product-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+  background-color:  #fafafa;
+}
+
+.currency-select {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+  background-color:  #fafafa;
+
+
+}
+}
+
 
 @media (min-width: 1025px) {
   .newproduct-container {
